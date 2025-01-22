@@ -4,7 +4,7 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
+  "title": "Blockonomics API Documentation",
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
   "url": "https://your-docusaurus-site.example.com",
@@ -52,9 +52,9 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "My Site",
+      "title": "Blockonomics API Documentation",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "Blockonomics",
         "src": "img/blockonomics_logo_black.svg"
       },
       "items": [
@@ -63,11 +63,6 @@ export default {
           "sidebarId": "tutorialSidebar",
           "position": "left",
           "label": "Tutorial"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
         },
         {
           "href": "https://github.com/facebook/docusaurus",
@@ -109,10 +104,6 @@ export default {
         {
           "title": "More",
           "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
             {
               "label": "GitHub",
               "href": "https://github.com/facebook/docusaurus"

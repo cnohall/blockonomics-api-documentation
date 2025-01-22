@@ -8,18 +8,8 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "tutorial-basics/create-a-page",
           "docs": [
-            {
-              "id": "hello",
-              "path": "/docs/hello",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "intro",
-              "path": "/docs/intro",
-              "sidebar": "tutorialSidebar"
-            },
             {
               "id": "tutorial-basics/congratulations",
               "path": "/docs/tutorial-basics/congratulations",
@@ -51,23 +41,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "/category/tutorial---basics",
               "path": "/docs/category/tutorial---basics",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -75,8 +50,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/docs/category/tutorial---basics",
+                "label": "Tutorial - Basics"
               }
             }
           }
