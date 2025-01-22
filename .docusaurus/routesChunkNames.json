@@ -56,45 +56,61 @@
     },
     "content": "content---new-markdown-page-50-f-8ef"
   },
-  "/-d50": {
+  "/-6a5": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-47a": {
+  "/-77b": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-2a2": {
+  "/-6b9": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/api-documentation/congratulations-8ae": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---api-documentation-congratulations-495-a71"
-  },
-  "/api-documentation/create-a-blog-post-be4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---api-documentation-create-a-blog-postba-3-f84"
-  },
-  "/api-documentation/create-a-document-071": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---api-documentation-create-a-document-4-eb-c4e"
-  },
-  "/api-documentation/create-a-page-713": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---api-documentation-create-a-page-2-e-0-a71"
-  },
-  "/api-documentation/deploy-your-site-01a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---api-documentation-deploy-your-site-71-f-8e2"
-  },
-  "/api-documentation/markdown-features-d07": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---api-documentation-markdown-featuresbd-8-652"
-  },
-  "/-d94": {
+  "/category/search-a83": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---category-tutorial-basicsa-30-524"
+    "__props": "__props---category-search-27-f-c4c"
+  },
+  "/category/wallets--stores-9f0": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---category-wallets-storesf-98-848"
+  },
+  "/search/balance-dad": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-balance-507-b9f"
+  },
+  "/search/history-945": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-history-039-089"
+  },
+  "/search/limit-7f0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-limit-25-a-17a"
+  },
+  "/search/markdown-features-44a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-markdown-featuresc-93-ce2"
+  },
+  "/search/transaction-detail-300": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-transaction-detail-763-3e9"
+  },
+  "/search/transaction-receipt-c1e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-transaction-receipt-7-b-0-e03"
+  },
+  "/wallets-and-stores/congratulations-621": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---wallets-and-stores-congratulationse-1-c-dfc"
+  },
+  "/wallets-and-stores/create-a-blog-post-fda": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---wallets-and-stores-create-a-blog-posta-0-d-485"
+  },
+  "/-fc9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---intro-0-e-3-7b8"
   }
 }

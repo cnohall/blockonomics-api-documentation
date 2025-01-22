@@ -1,0 +1,8 @@
+{
+  "label": "Wallets & Stores",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Blockonomics Wallets & Stores API Documentation"
+  }
+}

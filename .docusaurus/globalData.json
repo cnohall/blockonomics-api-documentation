@@ -8,41 +8,61 @@
           "label": "Next",
           "isLast": true,
           "path": "/",
-          "mainDocId": "api-documentation/create-a-page",
+          "mainDocId": "intro",
           "docs": [
             {
-              "id": "api-documentation/congratulations",
-              "path": "/api-documentation/congratulations",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api-documentation/create-a-blog-post",
-              "path": "/api-documentation/create-a-blog-post",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api-documentation/create-a-document",
-              "path": "/api-documentation/create-a-document",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api-documentation/create-a-page",
-              "path": "/api-documentation/create-a-page",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api-documentation/deploy-your-site",
-              "path": "/api-documentation/deploy-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api-documentation/markdown-features",
-              "path": "/api-documentation/markdown-features",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/",
+              "id": "intro",
               "path": "/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "search/balance",
+              "path": "/search/balance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "search/history",
+              "path": "/search/history",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "search/limit",
+              "path": "/search/limit",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "search/markdown-features",
+              "path": "/search/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "search/transaction-detail",
+              "path": "/search/transaction-detail",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "search/transaction-receipt",
+              "path": "/search/transaction-receipt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "wallets-and-stores/congratulations",
+              "path": "/wallets-and-stores/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "wallets-and-stores/create-a-blog-post",
+              "path": "/wallets-and-stores/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/search",
+              "path": "/category/search",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/wallets--stores",
+              "path": "/category/wallets--stores",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -51,7 +71,7 @@
             "tutorialSidebar": {
               "link": {
                 "path": "/",
-                "label": "Tutorial - Basics"
+                "label": "intro"
               }
             }
           }

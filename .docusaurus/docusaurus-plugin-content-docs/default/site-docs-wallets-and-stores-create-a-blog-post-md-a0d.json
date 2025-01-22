@@ -1,0 +1,23 @@
+{
+  "id": "wallets-and-stores/create-a-blog-post",
+  "title": "Stores",
+  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "source": "@site/docs/wallets-and-stores/create-a-blog-post.md",
+  "sourceDirName": "wallets-and-stores",
+  "slug": "/wallets-and-stores/create-a-blog-post",
+  "permalink": "/wallets-and-stores/create-a-blog-post",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wallets-and-stores/create-a-blog-post.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Wallets",
+    "permalink": "/wallets-and-stores/congratulations"
+  }
+}

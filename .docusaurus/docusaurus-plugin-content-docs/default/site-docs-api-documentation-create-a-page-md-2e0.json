@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Tutorial - Basics",
-    "permalink": "/"
+    "title": "Search",
+    "permalink": "/category/search"
   },
   "next": {
     "title": "Create a Document",

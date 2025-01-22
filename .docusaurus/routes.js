@@ -49,55 +49,79 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'd50'),
+    component: ComponentCreator('/', '6a5'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '47a'),
+        component: ComponentCreator('/', '77b'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '2a2'),
+            component: ComponentCreator('/', '6b9'),
             routes: [
               {
-                path: '/api-documentation/congratulations',
-                component: ComponentCreator('/api-documentation/congratulations', '8ae'),
+                path: '/category/search',
+                component: ComponentCreator('/category/search', 'a83'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/api-documentation/create-a-blog-post',
-                component: ComponentCreator('/api-documentation/create-a-blog-post', 'be4'),
+                path: '/category/wallets--stores',
+                component: ComponentCreator('/category/wallets--stores', '9f0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/api-documentation/create-a-document',
-                component: ComponentCreator('/api-documentation/create-a-document', '071'),
+                path: '/search/balance',
+                component: ComponentCreator('/search/balance', 'dad'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/api-documentation/create-a-page',
-                component: ComponentCreator('/api-documentation/create-a-page', '713'),
+                path: '/search/history',
+                component: ComponentCreator('/search/history', '945'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/api-documentation/deploy-your-site',
-                component: ComponentCreator('/api-documentation/deploy-your-site', '01a'),
+                path: '/search/limit',
+                component: ComponentCreator('/search/limit', '7f0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/api-documentation/markdown-features',
-                component: ComponentCreator('/api-documentation/markdown-features', 'd07'),
+                path: '/search/markdown-features',
+                component: ComponentCreator('/search/markdown-features', '44a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/search/transaction-detail',
+                component: ComponentCreator('/search/transaction-detail', '300'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/search/transaction-receipt',
+                component: ComponentCreator('/search/transaction-receipt', 'c1e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/wallets-and-stores/congratulations',
+                component: ComponentCreator('/wallets-and-stores/congratulations', '621'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/wallets-and-stores/create-a-blog-post',
+                component: ComponentCreator('/wallets-and-stores/create-a-blog-post', 'fda'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/',
-                component: ComponentCreator('/', 'd94'),
+                component: ComponentCreator('/', 'fc9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
