@@ -45,14 +45,14 @@
   "/markdown-page-3d7": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---index-originala-74-6bb"
+      "plugin": "plugin---markdown-pagea-74-7b5"
     },
     "content": "content---markdown-page-393-028"
   },
   "/new-markdown-page-0d0": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---index-originala-74-6bb"
+      "plugin": "plugin---markdown-pagea-74-7b5"
     },
     "content": "content---new-markdown-page-50-f-8ef"
   },
@@ -111,6 +111,6 @@
   },
   "/-fc9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---intro-0-e-3-7b8"
+    "content": "content---0-e-3-279"
   }
 }
