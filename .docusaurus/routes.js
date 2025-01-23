@@ -49,15 +49,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '6a5'),
+    component: ComponentCreator('/', '7ce'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '77b'),
+        component: ComponentCreator('/', '335'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '6b9'),
+            component: ComponentCreator('/', '164'),
             routes: [
               {
                 path: '/category/search',
@@ -121,7 +121,7 @@ export default [
               },
               {
                 path: '/',
-                component: ComponentCreator('/', 'fc9'),
+                component: ComponentCreator('/', '711'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
