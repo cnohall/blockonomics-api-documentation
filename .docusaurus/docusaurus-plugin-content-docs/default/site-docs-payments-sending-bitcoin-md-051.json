@@ -15,7 +15,7 @@
   "frontMatter": {
     "sidebar_position": 8
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Checkouts",
     "permalink": "/payments/checkouts"

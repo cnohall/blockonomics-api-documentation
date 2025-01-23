@@ -15,7 +15,7 @@
   "frontMatter": {
     "sidebar_position": 7
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Payment Buttons",
     "permalink": "/payments/payment-buttons"

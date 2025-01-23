@@ -1,25 +1,29 @@
 {
-  "id": "dev-library",
+  "id": "dev-library copy",
   "title": "Dev Library",
   "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
-  "source": "@site/docs/dev-library.md",
+  "source": "@site/docs/dev-library copy.md",
   "sourceDirName": ".",
   "slug": "/dev-library",
   "permalink": "/dev-library",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/dev-library.md",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/dev-library copy.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 6,
+  "sidebarPosition": 5,
   "frontMatter": {
-    "sidebar_position": 6,
+    "sidebar_position": 5,
     "slug": "/dev-library",
     "title": "Dev Library"
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Playground",
-    "permalink": "/playground"
+    "title": "USDT Payments",
+    "permalink": "/payments/usdt-payments"
+  },
+  "next": {
+    "title": "Dev Library",
+    "permalink": "/dev-library"
   }
 }

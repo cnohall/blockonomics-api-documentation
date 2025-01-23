@@ -1,6 +1,6 @@
 ---
-sidebar_position: 5
-slug: /
+sidebar_position: 6
+slug: /dev-library
 title: Dev Library
 ---
 

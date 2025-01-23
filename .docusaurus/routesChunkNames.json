@@ -42,118 +42,108 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/markdown-page-3d7": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
-    "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
-    },
-    "content": "content---markdown-page-393-028"
-  },
-  "/new-markdown-page-0d0": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
-    "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
-    },
-    "content": "content---new-markdown-page-50-f-8ef"
-  },
-  "/-777": {
+  "/-290": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-77a": {
+  "/-c15": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-31f": {
+  "/-469": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/category/payments-799": {
+  "/category/payments-96a": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---category-paymentsa-44-b90"
   },
-  "/category/search-a83": {
+  "/category/search-600": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---category-search-27-f-c4c"
   },
-  "/category/wallets--stores-9f0": {
+  "/category/wallets--stores-073": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---category-wallets-storesf-98-848"
   },
-  "/payments/basic-info-3ee": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-basic-info-7-f-8-4b2"
-  },
-  "/payments/btc-price-70b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-btc-price-7-fb-2e0"
-  },
-  "/payments/checkouts-70a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-checkouts-9-f-3-b7a"
-  },
-  "/payments/http-callback-a64": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-http-callback-0-ea-9d7"
-  },
-  "/payments/new-addresses-72d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-new-addresses-19-b-845"
-  },
-  "/payments/payment-buttons-070": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-payment-buttonsca-6-b46"
-  },
-  "/payments/payment-notification-74b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-payment-notification-861-a43"
-  },
-  "/payments/sending-bitcoin-b68": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-sending-bitcoin-051-c5b"
-  },
-  "/payments/test-payments-962": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-test-payments-3-e-3-4d3"
-  },
-  "/payments/usdt-payments-52e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---payments-usdt-paymentsbe-7-f82"
-  },
-  "/search/balance-dad": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---search-balance-507-b9f"
-  },
-  "/search/history-945": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---search-history-039-089"
-  },
-  "/search/limits-20a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---search-limits-288-56b"
-  },
-  "/search/transaction-detail-300": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---search-transaction-detail-763-3e9"
-  },
-  "/search/transaction-receipt-c1e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---search-transaction-receipt-7-b-0-e03"
-  },
-  "/wallets-and-stores/store-0f8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---wallets-and-stores-stored-53-823"
-  },
-  "/wallets-and-stores/wallets-404": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---wallets-and-stores-wallets-27-a-54a"
-  },
-  "/-eff": {
+  "/dev-library-76b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---dev-library-3-b-1-7f1"
   },
-  "/-711": {
+  "/payments/basic-info-7b9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-basic-info-7-f-8-4b2"
+  },
+  "/payments/btc-price-612": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-btc-price-7-fb-2e0"
+  },
+  "/payments/checkouts-834": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-checkouts-9-f-3-b7a"
+  },
+  "/payments/http-callback-906": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-http-callback-0-ea-9d7"
+  },
+  "/payments/new-addresses-603": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-new-addresses-19-b-845"
+  },
+  "/payments/payment-buttons-eae": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-payment-buttonsca-6-b46"
+  },
+  "/payments/payment-notification-9e7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-payment-notification-861-a43"
+  },
+  "/payments/sending-bitcoin-711": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-sending-bitcoin-051-c5b"
+  },
+  "/payments/test-payments-1c8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-test-payments-3-e-3-4d3"
+  },
+  "/payments/usdt-payments-b1e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-usdt-paymentsbe-7-f82"
+  },
+  "/playground-cbd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---playground-70-e-506"
+  },
+  "/search/balance-fe5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-balance-507-b9f"
+  },
+  "/search/history-829": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-history-039-089"
+  },
+  "/search/limits-bfa": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-limits-288-56b"
+  },
+  "/search/transaction-detail-be6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-transaction-detail-763-3e9"
+  },
+  "/search/transaction-receipt-f64": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---search-transaction-receipt-7-b-0-e03"
+  },
+  "/wallets-and-stores/store-abc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---wallets-and-stores-stored-53-823"
+  },
+  "/wallets-and-stores/wallets-129": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---wallets-and-stores-wallets-27-a-54a"
+  },
+  "/-80b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---a-09-df0"
   }

@@ -15,13 +15,13 @@
   "frontMatter": {
     "sidebar_position": 8
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Test Payments",
     "permalink": "/payments/test-payments"
   },
   "next": {
-    "title": "Dev Library",
-    "permalink": "/"
+    "title": "Playground",
+    "permalink": "/playground"
   }
 }

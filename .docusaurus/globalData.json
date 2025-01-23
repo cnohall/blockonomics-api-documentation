@@ -8,122 +8,127 @@
           "label": "Next",
           "isLast": true,
           "path": "/",
-          "mainDocId": "dev-library",
+          "mainDocId": "introduction",
           "docs": [
             {
               "id": "dev-library",
-              "path": "/",
-              "sidebar": "tutorialSidebar"
+              "path": "/dev-library",
+              "sidebar": "docs"
             },
             {
               "id": "introduction",
               "path": "/",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/basic-info",
               "path": "/payments/basic-info",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/btc-price",
               "path": "/payments/btc-price",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/checkouts",
               "path": "/payments/checkouts",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/http-callback",
               "path": "/payments/http-callback",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/new-addresses",
               "path": "/payments/new-addresses",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/payment-buttons",
               "path": "/payments/payment-buttons",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/payment-notification",
               "path": "/payments/payment-notification",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/sending-bitcoin",
               "path": "/payments/sending-bitcoin",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/test-payments",
               "path": "/payments/test-payments",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "payments/usdt-payments",
               "path": "/payments/usdt-payments",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
+            },
+            {
+              "id": "playground",
+              "path": "/playground",
+              "sidebar": "docs"
             },
             {
               "id": "search/balance",
               "path": "/search/balance",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "search/history",
               "path": "/search/history",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "search/limits",
               "path": "/search/limits",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "search/transaction-detail",
               "path": "/search/transaction-detail",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "search/transaction-receipt",
               "path": "/search/transaction-receipt",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "wallets-and-stores/store",
               "path": "/wallets-and-stores/store",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "wallets-and-stores/wallets",
               "path": "/wallets-and-stores/wallets",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "/category/search",
               "path": "/category/search",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "/category/wallets--stores",
               "path": "/category/wallets--stores",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "/category/payments",
               "path": "/category/payments",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "tutorialSidebar": {
+            "docs": {
               "link": {
                 "path": "/",
                 "label": "introduction"

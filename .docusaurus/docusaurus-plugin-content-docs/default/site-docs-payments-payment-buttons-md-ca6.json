@@ -15,7 +15,7 @@
   "frontMatter": {
     "sidebar_position": 6
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "BTC Price",
     "permalink": "/payments/btc-price"

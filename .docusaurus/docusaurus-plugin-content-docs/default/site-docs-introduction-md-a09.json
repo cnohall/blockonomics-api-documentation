@@ -17,7 +17,7 @@
     "slug": "/",
     "title": "Introduction"
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "next": {
     "title": "Search",
     "permalink": "/category/search"

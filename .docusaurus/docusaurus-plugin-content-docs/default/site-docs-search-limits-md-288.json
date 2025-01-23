@@ -15,7 +15,7 @@
   "frontMatter": {
     "sidebar_position": 5
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Transaction Receipt",
     "permalink": "/search/transaction-receipt"
