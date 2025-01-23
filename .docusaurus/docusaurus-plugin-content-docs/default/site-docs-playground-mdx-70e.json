@@ -1,7 +1,7 @@
 {
   "id": "playground",
   "title": "Playground",
-  "description": "Docusaurus green",
+  "description": "",
   "source": "@site/docs/playground.mdx",
   "sourceDirName": ".",
   "slug": "/playground",
