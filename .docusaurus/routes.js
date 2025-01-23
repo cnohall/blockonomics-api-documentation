@@ -49,16 +49,22 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '7ce'),
+    component: ComponentCreator('/', '777'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '335'),
+        component: ComponentCreator('/', '77a'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '164'),
+            component: ComponentCreator('/', '31f'),
             routes: [
+              {
+                path: '/category/payments',
+                component: ComponentCreator('/category/payments', '799'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/category/search',
                 component: ComponentCreator('/category/search', 'a83'),
@@ -68,6 +74,66 @@ export default [
               {
                 path: '/category/wallets--stores',
                 component: ComponentCreator('/category/wallets--stores', '9f0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/basic-info',
+                component: ComponentCreator('/payments/basic-info', '3ee'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/btc-price',
+                component: ComponentCreator('/payments/btc-price', '70b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/checkouts',
+                component: ComponentCreator('/payments/checkouts', '70a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/http-callback',
+                component: ComponentCreator('/payments/http-callback', 'a64'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/new-addresses',
+                component: ComponentCreator('/payments/new-addresses', '72d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/payment-buttons',
+                component: ComponentCreator('/payments/payment-buttons', '070'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/payment-notification',
+                component: ComponentCreator('/payments/payment-notification', '74b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/sending-bitcoin',
+                component: ComponentCreator('/payments/sending-bitcoin', 'b68'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/test-payments',
+                component: ComponentCreator('/payments/test-payments', '962'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/payments/usdt-payments',
+                component: ComponentCreator('/payments/usdt-payments', '52e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -84,14 +150,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/search/limit',
-                component: ComponentCreator('/search/limit', '7f0'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/search/markdown-features',
-                component: ComponentCreator('/search/markdown-features', '44a'),
+                path: '/search/limits',
+                component: ComponentCreator('/search/limits', '20a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -108,14 +168,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/wallets-and-stores/congratulations',
-                component: ComponentCreator('/wallets-and-stores/congratulations', '621'),
+                path: '/wallets-and-stores/store',
+                component: ComponentCreator('/wallets-and-stores/store', '0f8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/wallets-and-stores/create-a-blog-post',
-                component: ComponentCreator('/wallets-and-stores/create-a-blog-post', 'fda'),
+                path: '/wallets-and-stores/wallets',
+                component: ComponentCreator('/wallets-and-stores/wallets', '404'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/',
+                component: ComponentCreator('/', 'eff'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

@@ -56,18 +56,22 @@
     },
     "content": "content---new-markdown-page-50-f-8ef"
   },
-  "/-7ce": {
+  "/-777": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-335": {
+  "/-77a": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-164": {
+  "/-31f": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/category/payments-799": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---category-paymentsa-44-b90"
   },
   "/category/search-a83": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -77,6 +81,46 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---category-wallets-storesf-98-848"
   },
+  "/payments/basic-info-3ee": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-basic-info-7-f-8-4b2"
+  },
+  "/payments/btc-price-70b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-btc-price-7-fb-2e0"
+  },
+  "/payments/checkouts-70a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-checkouts-9-f-3-b7a"
+  },
+  "/payments/http-callback-a64": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-http-callback-0-ea-9d7"
+  },
+  "/payments/new-addresses-72d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-new-addresses-19-b-845"
+  },
+  "/payments/payment-buttons-070": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-payment-buttonsca-6-b46"
+  },
+  "/payments/payment-notification-74b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-payment-notification-861-a43"
+  },
+  "/payments/sending-bitcoin-b68": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-sending-bitcoin-051-c5b"
+  },
+  "/payments/test-payments-962": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-test-payments-3-e-3-4d3"
+  },
+  "/payments/usdt-payments-52e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---payments-usdt-paymentsbe-7-f82"
+  },
   "/search/balance-dad": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---search-balance-507-b9f"
@@ -85,13 +129,9 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---search-history-039-089"
   },
-  "/search/limit-7f0": {
+  "/search/limits-20a": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---search-limit-25-a-17a"
-  },
-  "/search/markdown-features-44a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---search-markdown-featuresc-93-ce2"
+    "content": "content---search-limits-288-56b"
   },
   "/search/transaction-detail-300": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -101,13 +141,17 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---search-transaction-receipt-7-b-0-e03"
   },
-  "/wallets-and-stores/congratulations-621": {
+  "/wallets-and-stores/store-0f8": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---wallets-and-stores-congratulationse-1-c-dfc"
+    "content": "content---wallets-and-stores-stored-53-823"
   },
-  "/wallets-and-stores/create-a-blog-post-fda": {
+  "/wallets-and-stores/wallets-404": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---wallets-and-stores-create-a-blog-posta-0-d-485"
+    "content": "content---wallets-and-stores-wallets-27-a-54a"
+  },
+  "/-eff": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---dev-library-3-b-1-7f1"
   },
   "/-711": {
     "__comp": "__comp---theme-doc-item-178-a40",

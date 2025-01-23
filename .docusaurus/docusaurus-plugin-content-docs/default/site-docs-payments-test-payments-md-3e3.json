@@ -1,0 +1,27 @@
+{
+  "id": "payments/test-payments",
+  "title": "Test Payments",
+  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "source": "@site/docs/payments/test-payments.md",
+  "sourceDirName": "payments",
+  "slug": "/payments/test-payments",
+  "permalink": "/payments/test-payments",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/payments/test-payments.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sending Bitcoin",
+    "permalink": "/payments/sending-bitcoin"
+  },
+  "next": {
+    "title": "USDT Payments",
+    "permalink": "/payments/usdt-payments"
+  }
+}

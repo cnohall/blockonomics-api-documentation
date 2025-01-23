@@ -8,11 +8,66 @@
           "label": "Next",
           "isLast": true,
           "path": "/",
-          "mainDocId": "introduction",
+          "mainDocId": "dev-library",
           "docs": [
+            {
+              "id": "dev-library",
+              "path": "/",
+              "sidebar": "tutorialSidebar"
+            },
             {
               "id": "introduction",
               "path": "/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/basic-info",
+              "path": "/payments/basic-info",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/btc-price",
+              "path": "/payments/btc-price",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/checkouts",
+              "path": "/payments/checkouts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/http-callback",
+              "path": "/payments/http-callback",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/new-addresses",
+              "path": "/payments/new-addresses",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/payment-buttons",
+              "path": "/payments/payment-buttons",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/payment-notification",
+              "path": "/payments/payment-notification",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/sending-bitcoin",
+              "path": "/payments/sending-bitcoin",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/test-payments",
+              "path": "/payments/test-payments",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "payments/usdt-payments",
+              "path": "/payments/usdt-payments",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -26,13 +81,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "search/limit",
-              "path": "/search/limit",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "search/markdown-features",
-              "path": "/search/markdown-features",
+              "id": "search/limits",
+              "path": "/search/limits",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -46,13 +96,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "wallets-and-stores/congratulations",
-              "path": "/wallets-and-stores/congratulations",
+              "id": "wallets-and-stores/store",
+              "path": "/wallets-and-stores/store",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "wallets-and-stores/create-a-blog-post",
-              "path": "/wallets-and-stores/create-a-blog-post",
+              "id": "wallets-and-stores/wallets",
+              "path": "/wallets-and-stores/wallets",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -63,6 +113,11 @@
             {
               "id": "/category/wallets--stores",
               "path": "/category/wallets--stores",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/payments",
+              "path": "/category/payments",
               "sidebar": "tutorialSidebar"
             }
           ],

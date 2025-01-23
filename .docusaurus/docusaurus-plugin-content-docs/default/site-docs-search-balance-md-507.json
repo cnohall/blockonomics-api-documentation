@@ -1,7 +1,7 @@
 {
   "id": "search/balance",
   "title": "Balance",
-  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "description": "API Response",
   "source": "@site/docs/search/balance.md",
   "sourceDirName": "search",
   "slug": "/search/balance",

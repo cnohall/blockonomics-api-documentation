@@ -1,0 +1,23 @@
+{
+  "id": "payments/limit",
+  "title": "Limit",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/payments/limit.md",
+  "sourceDirName": "payments",
+  "slug": "/payments/limit",
+  "permalink": "/payments/limit",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/payments/limit.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Transaction Receipt",
+    "permalink": "/payments/transaction-receipt"
+  }
+}

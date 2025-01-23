@@ -11,7 +11,8 @@ export default {
   "baseUrl": "/",
   "organizationName": "facebook",
   "projectName": "docusaurus",
-  "onBrokenLinks": "throw",
+  "onBrokenAnchors": "warn",
+  "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
     "defaultLocale": "en",
@@ -337,7 +338,6 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
     "static"

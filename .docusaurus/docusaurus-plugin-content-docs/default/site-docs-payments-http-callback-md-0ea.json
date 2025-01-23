@@ -1,0 +1,27 @@
+{
+  "id": "payments/http-callback",
+  "title": "HTTP Callback",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/payments/http-callback.md",
+  "sourceDirName": "payments",
+  "slug": "/payments/http-callback",
+  "permalink": "/payments/http-callback",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/payments/http-callback.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "New Address",
+    "permalink": "/payments/new-addresses"
+  },
+  "next": {
+    "title": "Payment Notification",
+    "permalink": "/payments/payment-notification"
+  }
+}

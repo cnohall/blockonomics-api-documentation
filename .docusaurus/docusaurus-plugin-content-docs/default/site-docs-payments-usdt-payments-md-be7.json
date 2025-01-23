@@ -1,0 +1,27 @@
+{
+  "id": "payments/usdt-payments",
+  "title": "USDT Payments",
+  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "source": "@site/docs/payments/usdt-payments.md",
+  "sourceDirName": "payments",
+  "slug": "/payments/usdt-payments",
+  "permalink": "/payments/usdt-payments",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/payments/usdt-payments.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Test Payments",
+    "permalink": "/payments/test-payments"
+  },
+  "next": {
+    "title": "Dev Library",
+    "permalink": "/"
+  }
+}

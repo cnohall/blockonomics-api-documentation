@@ -4,54 +4,38 @@ sidebar_position: 3
 
 # Transaction Detail
 
-Documents are **groups of pages** connected through:
+Returns detail of input transaction id. A list of transaction inputs and outputs are returned. Time is the received unix timestamp of transaction, value is the amount of transaction input/output in satoshis, fee is the transaction fees in satoshis, size is the transaction size in bytes. For unconfirmed transactions an <b>RBF</b> attribute may be returned.
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+<i>rbf</i> of value 1 means <i>Opted-In RBF signalling</i>.<br/>
+<i>rbf</i> of value 2 means <i>rbf</i> due to inherited signalling (ancestor transaction has RBF flag).
 
-## Create your first Doc
+### Definition
 
-Create a Markdown file at `docs/hello.md`:
-
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
+```http
+GET https://www.blockonomics.co/api/tx_detail?txid=<txid>
 ```
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
+### Example Request
 
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: "Hi!"
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
+```bash
+curl https://www.blockonomics.co/api/tx_detail?txid=c4978bfc9b4cd632fb37eb5f69c7c686ae364d9cb1b32ec01c0f8bae72530a4e
 ```
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
+### Example Response
 
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    "Intro",
-    // highlight-next-line
-    "hello",
-    {
-      type: "category",
-      label: "Tutorial",
-      items: ["tutorial-basics/create-a-document"],
-    },
+```json
+{
+  "status": "Confirmed",
+  "fee": 100000,
+  "vout": [
+    { "value": 10000, "address": "1FnQjXQc8F6jyjF8L92yLpnMhSWpw8t8jo" },
+    { "value": 4824404598, "address": "1AEgdWjJrEbroURgWmPrXkFdzxGxdF7c4G" },
+    { "value": 899950000, "address": "33wBKF7y471qK9zuWQDHbesnGX8JL5YCbW" }
   ],
-};
+  "vin": [
+    { "value": 5724464598, "address": "1AEgdWjJrEbroURgWmPrXkFdzxGxdF7c4G" }
+  ],
+  "time": 1577166893,
+  "size": 257
+}
 ```

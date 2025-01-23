@@ -1,7 +1,7 @@
 {
   "id": "search/transaction-detail",
   "title": "Transaction Detail",
-  "description": "Documents are groups of pages connected through:",
+  "description": "Returns detail of input transaction id. A list of transaction inputs and outputs are returned. Time is the received unix timestamp of transaction, value is the amount of transaction input/output in satoshis, fee is the transaction fees in satoshis, size is the transaction size in bytes. For unconfirmed transactions an RBF attribute may be returned.",
   "source": "@site/docs/search/transaction-detail.md",
   "sourceDirName": "search",
   "slug": "/search/transaction-detail",

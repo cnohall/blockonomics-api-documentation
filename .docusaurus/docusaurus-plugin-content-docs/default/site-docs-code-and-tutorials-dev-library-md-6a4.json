@@ -1,0 +1,23 @@
+{
+  "id": "code-and-tutorials/dev-library",
+  "title": "Dev Library",
+  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "source": "@site/docs/code-and-tutorials/dev-library.md",
+  "sourceDirName": "code-and-tutorials",
+  "slug": "/code-and-tutorials/dev-library",
+  "permalink": "/code-and-tutorials/dev-library",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/code-and-tutorials/dev-library.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Code & Tutorials",
+    "permalink": "/category/code--tutorials"
+  }
+}

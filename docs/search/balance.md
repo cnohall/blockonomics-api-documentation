@@ -4,20 +4,60 @@ sidebar_position: 2
 
 # Balance
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+## API Response
 
-Docusaurus has **much more to offer**!
+This API returns the balance and the unconfirmed amount (amount waiting for 2 confirmations) of multiple addresses or xpubs. The balance is reported in units of satoshis.
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+### Authentication
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+This request requires an **API Key** to be set in the request header for authorization.
 
-## What's next?
+### Response Attributes
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+- **balance**: Current balance of the address or xpub, in satoshis.
+- **unconfirmed**: Amount waiting for 2 confirmations, in satoshis.
+
+## Definition
+
+### Endpoint:
+
+```http
+POST https://www.blockonomics.co/api/balance
+```
+
+### Request Body:
+
+```json
+{
+  "addr": "<Whitespace separated list of bitcoin addresses/xpubs>"
+}
+```
+
+## Example Request
+
+Here's how you can send a `POST` request with your API Key:
+
+```sh
+curl -d '{"addr":"1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp 1dice97ECuByXAvqXpaYzSaQuPVvrtmz6"}' \
+-H 'Authorization: Bearer YOUR_API_KEY_HERE' \
+https://www.blockonomics.co/api/balance
+```
+
+## Example Response
+
+```json
+{
+  "response": [
+    {
+      "confirmed": 189412205,
+      "addr": "1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp",
+      "unconfirmed": 012211
+    },
+    {
+      "confirmed": 746599881,
+      "addr": "1dice97ECuByXAvqXpaYzSaQuPVvrtmz6",
+      "unconfirmed": 0
+    }
+  ]
+}
+```

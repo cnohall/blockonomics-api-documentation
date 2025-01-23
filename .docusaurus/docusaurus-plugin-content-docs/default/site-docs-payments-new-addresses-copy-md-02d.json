@@ -1,0 +1,27 @@
+{
+  "id": "payments/new-addresses copy",
+  "title": "New Address",
+  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "source": "@site/docs/payments/new-addresses copy.md",
+  "sourceDirName": "payments",
+  "slug": "/payments/new-addresses copy",
+  "permalink": "/payments/new-addresses copy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/payments/new-addresses copy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Basic Info",
+    "permalink": "/payments/basic-info"
+  },
+  "next": {
+    "title": "New Address",
+    "permalink": "/payments/new-addresses"
+  }
+}

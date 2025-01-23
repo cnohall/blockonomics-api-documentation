@@ -1,7 +1,7 @@
 {
   "id": "search/history",
   "title": "History",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "Returns the transaction history of multiple Bitcoin addresses/xpubs by considering them part of the same wallet. For each transaction, the following parameters are returned:",
   "source": "@site/docs/search/history.md",
   "sourceDirName": "search",
   "slug": "/search/history",

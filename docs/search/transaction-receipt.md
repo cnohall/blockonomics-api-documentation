@@ -4,28 +4,14 @@ sidebar_position: 4
 
 # Transaction Receipt
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+Transaction receipt is an easy to share permalink for any bitcoin transaction/payment. User addresses in the transaction are highlighted and net amount is calculated accordingly.
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+### Format
 
-## Build your site
-
-Build your site **for production**:
-
-```bash
-npm run build
+```http
+https://www.blockonomics.co/api/tx?txid=<txid>&addr=<list of user addreses>
 ```
 
-The static files are generated in the `build` folder.
+### Example
 
-## Deploy your site
-
-Test your production build locally:
-
-```bash
-npm run serve
-```
-
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
-
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+For same transaction, here is the [payer receipt](https://www.blockonomics.co//#/search?q=5e4e03748327a22288623b02dab1721ac9f8082c7294aaa7f9581be49dced2c5&addr=14SxzkZ5kVnHTA7pRFzQknwypi7rRYrtG8,1KsKNxMVnFhZaK5Doa6SMTcerPGYorD6M2) and here is the [payee receipt](https://www.blockonomics.co//#/search?q=5e4e03748327a22288623b02dab1721ac9f8082c7294aaa7f9581be49dced2c5&addr=1JJ5taVeiHcD6DXNkLLfocbHcE9Nzio1qV).

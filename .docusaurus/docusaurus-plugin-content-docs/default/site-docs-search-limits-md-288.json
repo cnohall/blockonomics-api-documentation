@@ -1,0 +1,27 @@
+{
+  "id": "search/limits",
+  "title": "Limits",
+  "description": "You can query max 100 addresses at a time. For higher number you should upgrade your plan and set your API Key in HTTP authorization header. Please limit API calls to 2 requests/min. Higher rates can lead to banning of your IP. Bitcoin blocks only arrive at an average rate of once in 10 minutes. So querying multiple times a second won't return you any new data. For realtime transaction updates on address, use our websocket API.",
+  "source": "@site/docs/search/limits.md",
+  "sourceDirName": "search",
+  "slug": "/search/limits",
+  "permalink": "/search/limits",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/search/limits.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Transaction Receipt",
+    "permalink": "/search/transaction-receipt"
+  },
+  "next": {
+    "title": "Wallets & Stores",
+    "permalink": "/category/wallets--stores"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "payments/transaction-detail",
+  "title": "Transaction Detail",
+  "description": "Documents are groups of pages connected through:",
+  "source": "@site/docs/payments/transaction-detail.md",
+  "sourceDirName": "payments",
+  "slug": "/payments/transaction-detail",
+  "permalink": "/payments/transaction-detail",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/payments/transaction-detail.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Http Callback",
+    "permalink": "/payments/http-callback"
+  },
+  "next": {
+    "title": "Transaction Receipt",
+    "permalink": "/payments/transaction-receipt"
+  }
+}

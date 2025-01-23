@@ -1,7 +1,7 @@
 {
   "id": "search/transaction-receipt",
   "title": "Transaction Receipt",
-  "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+  "description": "Transaction receipt is an easy to share permalink for any bitcoin transaction/payment. User addresses in the transaction are highlighted and net amount is calculated accordingly.",
   "source": "@site/docs/search/transaction-receipt.md",
   "sourceDirName": "search",
   "slug": "/search/transaction-receipt",
@@ -21,7 +21,7 @@
     "permalink": "/search/transaction-detail"
   },
   "next": {
-    "title": "Limit",
-    "permalink": "/search/limit"
+    "title": "Limits",
+    "permalink": "/search/limits"
   }
 }

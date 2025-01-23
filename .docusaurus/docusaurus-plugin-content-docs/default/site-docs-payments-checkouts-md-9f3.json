@@ -1,0 +1,27 @@
+{
+  "id": "payments/checkouts",
+  "title": "Checkouts",
+  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "source": "@site/docs/payments/checkouts.md",
+  "sourceDirName": "payments",
+  "slug": "/payments/checkouts",
+  "permalink": "/payments/checkouts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/payments/checkouts.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Payment Buttons",
+    "permalink": "/payments/payment-buttons"
+  },
+  "next": {
+    "title": "Sending Bitcoin",
+    "permalink": "/payments/sending-bitcoin"
+  }
+}
