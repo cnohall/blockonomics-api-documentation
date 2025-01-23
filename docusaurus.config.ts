@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
-  // TODO: Remove when we before production.
+  // TODO: Set Broken Links to "throw" before release of 1.0
   onBrokenAnchors: "warn",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
