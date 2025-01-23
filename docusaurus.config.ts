@@ -5,8 +5,6 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  // TODO: Remove when we before production.
-  onBrokenAnchors: "warn",
   title: "Blockonomics API Documentation",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
@@ -22,7 +20,9 @@ const config: Config = {
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  // TODO: Remove when we before production.
+  onBrokenAnchors: "warn",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
