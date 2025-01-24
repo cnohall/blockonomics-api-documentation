@@ -12,6 +12,7 @@ export default function Playground() {
   const [apiMethod, setApiMethod] = useState<string>(
     API_ENDPOINTS.BALANCE.method
   );
+  const [apiResponse, setApiResponse] = useState<string>("");
 
   useEffect(() => {
     // This effect will run only on the client side
@@ -28,13 +29,11 @@ export default function Playground() {
   };
 
   const setApiEndpointData = (endpoint) => {
-    console.log(endpoint);
     setApiEndpoint(endpoint.url);
     setApiMethod(endpoint.method);
   };
 
   const sendRequest = async () => {
-    console.log();
     const response = await fetch(apiEndpoint, {
       method: apiMethod,
       headers: {
@@ -43,7 +42,7 @@ export default function Playground() {
       },
     });
     const data = await response.json();
-    console.log(data);
+    setApiResponse(JSON.stringify(data, null, 2));
   };
 
   return (
@@ -75,6 +74,7 @@ export default function Playground() {
         ))}
       </select>
       <button onClick={sendRequest}>Send Request</button>
+      {apiResponse && <pre>{apiResponse}</pre>}
     </div>
   );
 }
