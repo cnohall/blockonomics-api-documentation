@@ -28,11 +28,13 @@ export default function Playground() {
   };
 
   const setApiEndpointData = (endpoint) => {
+    console.log(endpoint);
     setApiEndpoint(endpoint.url);
     setApiMethod(endpoint.method);
   };
 
   const sendRequest = async () => {
+    console.log();
     const response = await fetch(apiEndpoint, {
       method: apiMethod,
       headers: {
@@ -58,7 +60,14 @@ export default function Playground() {
       </button>
       <h3>API Endpoints</h3>
       <p>{apiEndpoint}</p>
-      <select onChange={(e) => setApiEndpointData(e.target)}>
+      <select
+        onChange={(e) => {
+          const selectedEndpoint = Object.values(API_ENDPOINTS).find(
+            (endpoint) => endpoint.url === e.target.value
+          );
+          setApiEndpointData(selectedEndpoint);
+        }}
+      >
         {Object.values(API_ENDPOINTS).map((endpoint) => (
           <option key={endpoint.url} value={endpoint.url}>
             {endpoint.name}

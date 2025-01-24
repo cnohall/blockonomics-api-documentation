@@ -8,16 +8,16 @@ export const API_ENDPOINTS: Record<string, API_ENDPOINT> = {
   BALANCE: {
     name: "Balance",
     url: "https://www.blockonomics.co/api/balance",
-    method: "GET",
+    method: "POST",
   },
   SEARCH_HISTORY: {
     name: "Search History",
     url: "https://www.blockonomics.co/api/searchhistory",
-    method: "GET",
+    method: "POST",
   },
   TRANSACTION_DETAIL: {
     name: "Transaction Detail",
-    url: "https://www.blockonomics.co/api/tx_detail",
+    url: "https://www.blockonomics.co/api/tx_detail?txid=",
     method: "GET",
   },
 };
