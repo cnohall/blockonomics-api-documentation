@@ -34,7 +34,8 @@ export default function Playground() {
   };
 
   const sendRequest = async () => {
-    const response = await fetch(apiEndpoint, {
+    const corsProxy = "https://cors-anywhere.herokuapp.com/";
+    const response = await fetch(corsProxy + apiEndpoint, {
       method: apiMethod,
       headers: {
         "Content-Type": "application/json",
