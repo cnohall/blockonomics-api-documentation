@@ -4,20 +4,95 @@ sidebar_position: 1
 
 # Wallets
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+You can work with your wallets in Blockonomics with the Wallets API, including creating, retrieving, updating & deleting. In GET request, you can use `balance=true` to retrieve wallet balance as well.
 
-Docusaurus has **much more to offer**!
+You can expect a standardized wallet object working with wallet endpoints:
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+- **id**: Unique identifier of the wallet
+- **name**: Given name
+- **emailid**: Email of the wallet owner
+- **crypto**: Cryptocurrency of the wallet
+- **address**: Address of the wallet
+- **xpub_index**: The current xpub index for BTC wallet
+- **gap_limit**: The gap limit for BTC wallet
+- **created_at**: Datetime of the wallet creation
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+If you have requested the wallet with balance, you can expect a balance object attached to the wallet object:
 
-## What's next?
+- **confirmed_sats**
+- **unconfirmed_sats**
+- **confirmed_fiat**
+- **unconfirmed_fiat**
+- **fiat_currency**
+- **total_addresses**
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+### Definition
+
+- **GET** 
+  - URL: `https://www.blockonomics.co/api/v2/wallets`
+  - Description: Retrieve all wallets
+
+- **POST** 
+  - URL: `https://www.blockonomics.co/api/v2/wallets`
+  - Request body: 
+    ```json
+    {
+      "name": "<Name of wallet for identification>",
+      "address": "<Xpub address>",
+      "crypto": "<type of crypto, only BTC accepted now>"
+    }
+    ```
+  - Description: Create a new wallet
+
+- **GET** 
+  - URL: `https://www.blockonomics.co/api/v2/wallets/{id}?balance=true`
+  - Description: Retrieve wallet by ID with balance
+
+- **POST** 
+  - URL: `https://www.blockonomics.co/api/v2/wallets/{id}`
+  - Request body: 
+    ```json
+    {
+      "name": "<New name>",
+      "gap_limit": "<gap limit>"
+    }
+    ```
+  - Description: Update wallet by ID
+
+- **DELETE** 
+  - URL: `https://www.blockonomics.co/api/v2/wallets/{id}`
+  - Description: Delete wallet by ID
+
+
+### Example Request
+
+```bash
+curl -H 'Authorization: Bearer 2cDNOlCN985d7Rx3atSDOlmMeYaxzho2uPmHheIw4eU'
+https://www.blockonomics.co/api/v2/wallets
+
+
+curl -X POST -H 'Authorization: Bearer 2cDNOlCN985d7Rx3atSDOlmMeYaxzho2uPmHheIw4eU' -H "Content-Type: application/json" -d '{"name": "new wallet name", "gap_limit": 500}'
+https://www.blockonomics.co/api/v2/wallets/88
+
+
+curl -X DELETE -H 'Authorization: Bearer 2cDNOlCN985d7Rx3atSDOlmMeYaxzho2uPmHheIw4eU'
+https://www.blockonomics.co/api/v2/wallets/88
+```
+
+### Example Responce 
+
+```json
+{
+  "data": [
+    {
+      "id": 88,
+      "name": "My Wallet",
+      "emailid": "youremail@mail.com",
+      "crypto": "BTC",
+      "address": "vpub5ZChrqCCu9GuMccp7RsasDB9CcTrHqMGYJZ5WfHWquMtretu2p6QctKAAkyvStgxCMGVycC7Py7C9pz8UeLT9p85CHbacL3sEn3THtEit9t",
+      "xpub_index": 1,
+      "gap_limit": 20
+    }
+  ]
+}
+```

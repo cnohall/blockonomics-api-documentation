@@ -1,7 +1,7 @@
 {
   "id": "wallets-and-stores/wallets",
   "title": "Wallets",
-  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "description": "You can work with your wallets in Blockonomics with the Wallets API, including creating, retrieving, updating & deleting. In GET request, you can use balance=true to retrieve wallet balance as well.",
   "source": "@site/docs/wallets-and-stores/wallets.md",
   "sourceDirName": "wallets-and-stores",
   "slug": "/wallets-and-stores/wallets",
