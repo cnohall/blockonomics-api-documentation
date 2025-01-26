@@ -13,63 +13,25 @@ You can expect a standardized store object working with store endpoints:
 - **emailid**: Email of the store owner
 - **http_callback**: Callback URL of the store
 
-You can expect a list of wallet objects if you have made a request to the stores with the wallets parameter.
+You can expect a list of <a href="/wallets-and-stores/wallets" target="_blank">wallet objects</a> if you have made a request to the stores with the wallets parameter.
 
 ### Definition
 
-- **GET** 
-  - URL: `https://www.blockonomics.co/api/v2/stores`
-  - Description: Retrieve all stores
+```sh
+GET https://www.blockonomics.co/api/v2/stores
 
-- **POST** 
-  - URL: `https://www.blockonomics.co/api/v2/stores`
-  - Request body: 
-    ```json
-    {
-      "name": "<Name of store>",
-      "http_callback": "<URL of HTTP callback>"
-    }
-    ```
-  - Description: Create a new store
+POST https://www.blockonomics.co/api/v2/stores
+Request body: {"name":<Name of store>,"http_callback": <URL of HTTP callback>}
 
-- **GET** 
-  - URL: `https://www.blockonomics.co/api/v2/stores/{id}`
-  - Description: Retrieve store by ID
+GET https://www.blockonomics.co/api/v2/stores/{id}
 
-- **POST** 
-  - URL: `https://www.blockonomics.co/api/v2/stores/{id}`
-  - Request body: 
-    ```json
-    {
-      "name": "<Name of store>",
-      "http_callback": "<URL of HTTP callback>"
-    }
-    ```
-  - Description: Update store by ID
+POST https://www.blockonomics.co/api/v2/stores/{id}
+Request body: {"name":<Name of store>,"http_callback": <URL of HTTP callback>}
 
-- **DELETE** 
-  - URL: `https://www.blockonomics.co/api/v2/stores/{id}`
-  - Description: Delete store by ID
+DELETE https://www.blockonomics.co/api/v2/stores/{id}
 
-- **GET** 
-  - URL: `https://www.blockonomics.co/api/v2/stores/{id}/wallets`
-  - Description: Retrieve wallets attached to the store by store ID
-
-### Attach / Detach Wallets
-
-- **POST** 
-  - URL: `https://www.blockonomics.co/api/v2/stores/{id}/wallets`
-  - Request body: 
-    ```json
-    {
-      "wallet_id": "<id of wallet to attach>"
-    }
-    ```
-  - Description: Attach wallet to store by store ID
-
-- **DELETE** 
-  - URL: `https://www.blockonomics.co/api/v2/stores/{id}/wallets/{id}`
-  - Description: Detach wallet from store by store ID
+GET https://www.blockonomics.co/api/v2/stores/{id}/wallets
+```
 
 ### Example Request
 

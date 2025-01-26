@@ -28,40 +28,19 @@ If you have requested the wallet with balance, you can expect a balance object a
 
 ### Definition
 
-- **GET** 
-  - URL: `https://www.blockonomics.co/api/v2/wallets`
-  - Description: Retrieve all wallets
+```sh
+GET https://www.blockonomics.co/api/v2/wallets
 
-- **POST** 
-  - URL: `https://www.blockonomics.co/api/v2/wallets`
-  - Request body: 
-    ```json
-    {
-      "name": "<Name of wallet for identification>",
-      "address": "<Xpub address>",
-      "crypto": "<type of crypto, only BTC accepted now>"
-    }
-    ```
-  - Description: Create a new wallet
+POST https://www.blockonomics.co/api/v2/wallets
+Request body: {"name":<Name of wallet for identification>,"address": <Xpub address>, "crypto":<type of crypto, only BTC accepted now>}
 
-- **GET** 
-  - URL: `https://www.blockonomics.co/api/v2/wallets/{id}?balance=true`
-  - Description: Retrieve wallet by ID with balance
+GET https://www.blockonomics.co/api/v2/wallets/{id}?balance=true
 
-- **POST** 
-  - URL: `https://www.blockonomics.co/api/v2/wallets/{id}`
-  - Request body: 
-    ```json
-    {
-      "name": "<New name>",
-      "gap_limit": "<gap limit>"
-    }
-    ```
-  - Description: Update wallet by ID
+POST https://www.blockonomics.co/api/v2/wallets/{id}
+Request body: { "name": <New name>, "gap_limit": <gap limit>}
 
-- **DELETE** 
-  - URL: `https://www.blockonomics.co/api/v2/wallets/{id}`
-  - Description: Delete wallet by ID
+DELETE https://www.blockonomics.co/api/v2/wallets/{id}
+```
 
 
 ### Example Request
