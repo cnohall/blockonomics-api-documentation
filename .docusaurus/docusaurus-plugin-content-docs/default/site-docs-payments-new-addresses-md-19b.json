@@ -1,7 +1,7 @@
 {
   "id": "payments/new-addresses",
   "title": "New Address",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "",
   "source": "@site/docs/payments/new-addresses.md",
   "sourceDirName": "payments",
   "slug": "/payments/new-addresses",
