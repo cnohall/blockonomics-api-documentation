@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '290'),
+    component: ComponentCreator('/', '470'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', 'c15'),
+        component: ComponentCreator('/', '4ea'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '469'),
+            component: ComponentCreator('/', '481'),
             routes: [
               {
                 path: '/category/payments',
@@ -130,12 +130,6 @@ export default [
               {
                 path: '/payments/usdt-payments',
                 component: ComponentCreator('/payments/usdt-payments', 'b1e'),
-                exact: true,
-                sidebar: "docs"
-              },
-              {
-                path: '/playground',
-                component: ComponentCreator('/playground', 'cbd'),
                 exact: true,
                 sidebar: "docs"
               },

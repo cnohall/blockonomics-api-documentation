@@ -71,11 +71,6 @@
               "sidebar": "docs"
             },
             {
-              "id": "playground",
-              "path": "/playground",
-              "sidebar": "docs"
-            },
-            {
               "id": "search/balance",
               "path": "/search/balance",
               "sidebar": "docs"
