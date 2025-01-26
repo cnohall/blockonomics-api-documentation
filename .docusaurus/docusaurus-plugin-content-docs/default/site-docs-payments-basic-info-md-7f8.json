@@ -1,7 +1,7 @@
 {
   "id": "payments/basic-info",
   "title": "Basic Info",
-  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "description": "Using payments API you can easily receive bitcoin payments on your custom website. Payments go directly to your bitcoin wallet. To get registered click on Get started for free on the Merchants Page. Feel free to consult below resources:",
   "source": "@site/docs/payments/basic-info.md",
   "sourceDirName": "payments",
   "slug": "/payments/basic-info",

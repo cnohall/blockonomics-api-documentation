@@ -4,20 +4,11 @@ sidebar_position: 1
 
 # Basic Info
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+Using payments API you can easily receive bitcoin payments on your custom website. Payments go directly to your bitcoin wallet. To get registered click on <i>Get started for free</i> on the <a href='https://www.blockonomics.co/merchants#/' target='_blank'>Merchants Page</a>. Feel free to consult below resources:
 
-Docusaurus has **much more to offer**!
+### <a href='https://insights.blockonomics.co/bitcoin-payments-api-101/?_gl=1*trqa6s*_gcl_au*MTg5MDk3MTgzNS4xNzM3NTE0NTU3*_ga*MjIyMDczNDM0LjE3MzM4MDg5ODQ.*_ga_GQG5T3Z9LZ*MTczNzg3MTY3OC42LjEuMTczNzg3NDIzOC4wLjAuMA..' target='_blank'>Payments API Blog Tutorial</a>
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+<a href='https://insights.blockonomics.co/bitcoin-payments-api-101/?_gl=1*trqa6s*_gcl_au*MTg5MDk3MTgzNS4xNzM3NTE0NTU3*_ga*MjIyMDczNDM0LjE3MzM4MDg5ODQ.*_ga_GQG5T3Z9LZ*MTczNzg3MTY3OC42LjEuMTczNzg3NDIzOC4wLjAuMA..' target='_blank'>![Payments API Tutorial Blog](../assets/payments-api.svg)</a>
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
 
-## What's next?
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
