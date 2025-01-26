@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '470'),
+    component: ComponentCreator('/', '6c5'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '4ea'),
+        component: ComponentCreator('/', 'e81'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '481'),
+            component: ComponentCreator('/', 'a90'),
             routes: [
               {
                 path: '/category/payments',
@@ -164,8 +164,8 @@ export default [
                 sidebar: "docs"
               },
               {
-                path: '/wallets-and-stores/store',
-                component: ComponentCreator('/wallets-and-stores/store', 'abc'),
+                path: '/wallets-and-stores/stores',
+                component: ComponentCreator('/wallets-and-stores/stores', 'f8d'),
                 exact: true,
                 sidebar: "docs"
               },

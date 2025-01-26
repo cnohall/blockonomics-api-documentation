@@ -1,0 +1,27 @@
+{
+  "id": "wallets-and-stores/stores",
+  "title": "Stores",
+  "description": "The Stores API lets you interact with all your stores, including creating, retrieving, updating & deleting, as well as attaching wallets to a store. You can use the parameter wallets=true with the Stores endpoint to retrieve the attached wallets of the stores.",
+  "source": "@site/docs/wallets-and-stores/stores.md",
+  "sourceDirName": "wallets-and-stores",
+  "slug": "/wallets-and-stores/stores",
+  "permalink": "/wallets-and-stores/stores",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wallets-and-stores/stores.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Wallets",
+    "permalink": "/wallets-and-stores/wallets"
+  },
+  "next": {
+    "title": "Payments",
+    "permalink": "/category/payments"
+  }
+}
