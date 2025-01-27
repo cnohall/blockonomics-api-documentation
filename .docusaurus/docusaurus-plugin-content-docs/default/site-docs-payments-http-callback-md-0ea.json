@@ -1,7 +1,7 @@
 {
   "id": "payments/http-callback",
   "title": "HTTP Callback",
-  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "description": "Blockonomics will send HTTP callbacks for payments on your address. For each callback, the following parameters are returned:",
   "source": "@site/docs/payments/http-callback.md",
   "sourceDirName": "payments",
   "slug": "/payments/http-callback",

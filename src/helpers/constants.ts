@@ -1,6 +1,7 @@
 import { newAddressNodeJS } from "../codeSnippets/newAddress/NodeJS";
 import { newAddressPHP } from "../codeSnippets/newAddress/PHP";
 import { newAddressPython } from "../codeSnippets/newAddress/Python";
+import { httpCallbackPHP } from "../codeSnippets/httpCallback/PHP";
 
 export interface API_ENDPOINT {
   name: string;
@@ -29,7 +30,8 @@ export const API_ENDPOINTS: Record<string, API_ENDPOINT> = {
 export const LOCAL_STORAGE_API_KEY = "apiKey";
 
 export const MULTIPLE_CODE_SNIPPETS_VARIANTS = {
-  NEW_ADDRESS: "New Address"
+  NEW_ADDRESS: "New Address",
+  HTTP_CALLBACK: "HTTP Callback"
 }
 
 export const MULTIPLE_CODE_SNIPPETS_LANGUAGES = {
@@ -43,6 +45,9 @@ export const MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT = {
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP,
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON,
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS,
+  ],
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.HTTP_CALLBACK]: [
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP,
   ]
 }
 
@@ -52,4 +57,7 @@ export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON]: newAddressPython,
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS]: newAddressNodeJS,
   },
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.HTTP_CALLBACK]: {
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: httpCallbackPHP,
+  }
 };

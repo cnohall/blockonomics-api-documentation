@@ -1,43 +1,32 @@
 ---
 sidebar_position: 3
 ---
+import MultipleCodeSnippets from "@site/src/components/organisms/MultipleCodeSnippets";
 
 # HTTP Callback
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+Blockonomics will send HTTP callbacks for payments on your address. For each callback, the following parameters are returned:
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+- **status**: The status of the transaction. Possible values are:
+  - `0`: Unconfirmed
+  - `1`: Partially Confirmed
+  - `2`: Confirmed
+- **addr**: The receiving address
+- **value**: The received payment amount in satoshis
+- **txid**: The ID of the paying transaction
+- For unconfirmed transactions, an <a href="https://www.blockonomics.co/api-documentation#transaction-detail" target='_blank'>rbf attribute</a> may be returned.
 
-## Create your first React Page
+A callback succeeds when the server returns a `200` HTTP status. Callbacks are retried 7 times with an exponential backoff of 4 seconds. Use <a href="https://www.blockonomics.co/dashboard#/store" target='_blank'>Dashboard > Stores</a> to configure callbacks for your server. Your callback URL can also contain a secret parameter for additional security.
 
-Create a file at `src/pages/my-react-page.js`:
+**Warning about zero confirmations**: It is always recommended to wait for at least one confirmation to deliver your product/service. Sometimes you may want to accept zero confirmation for fast delivery of digital goods. In such cases, you should reject unconfirmed payments that have the rbf attribute. This is because RBF payments can be easily cancelled or reversed.
 
-```jsx title="src/pages/my-react-page.js"
-import React from "react";
-import Layout from "@theme/Layout";
+### Example Callback
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
+```bash
+/api/callback_url?status=0&addr=1C3FrYaGgUJ8R21jJcwzryQQUFCWFpwcrL&value=10000&txid=4cb3 0849ffcaf61c0e97e8351cca2a32722ceb6ad5f34e630b4acb7c6dc1e73b&rbf=1
 ```
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+<MultipleCodeSnippets variant="HTTP Callback" />
 
-## Create your first Markdown Page
 
-Create a file at `src/pages/my-markdown-page.md`:
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
