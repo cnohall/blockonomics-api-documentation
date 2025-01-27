@@ -1,5 +1,4 @@
-export const newAddressNodeJS = `
-const axios = require("axios");
+export const newAddressNodeJS = `const axios = require("axios");
 
 const api_key = 'INSERT_API_KEY_HERE';
 const url = 'https://www.blockonomics.co/api/new_address';

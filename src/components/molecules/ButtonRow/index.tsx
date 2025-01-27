@@ -5,7 +5,7 @@ const ButtonRow = ({ buttonStrings, isButtonSelectedStates, onButtonClick }) => 
 
 
   return (
-    <div style={{ display: "flex", gap: "1rem" }}>
+    <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
       {buttonStrings.map((buttonLabel, index) => (
         <Button key={index} isSelected={isButtonSelectedStates[index]} onClick={() => onButtonClick(index)}>
           {buttonLabel}

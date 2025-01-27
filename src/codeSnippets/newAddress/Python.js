@@ -1,5 +1,4 @@
-export const newAddressPython = `
-import requests
+export const newAddressPython = `import requests
 
 api_key = 'INSERT_API_KEY_HERE'
 url = 'https://www.blockonomics.co/api/new_address'

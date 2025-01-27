@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import SyntaxHighlighter from 'react-syntax-highlighter';
 import ButtonRow from "../../molecules/ButtonRow";
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_LANGUAGES } from "@site/src/helpers/constants";
 
 const MultipleCodeSnippets = ({ variant }) => {
@@ -31,10 +33,13 @@ const MultipleCodeSnippets = ({ variant }) => {
     return contentStrings[selectedLanguage];
   };
 
+  const selectedLanguage = MULTIPLE_CODE_SNIPPETS_LANGUAGES[Object.keys(MULTIPLE_CODE_SNIPPETS_LANGUAGES)[isButtonSelectedStates.findIndex((isSelected) => isSelected)]];
   return (
     <div>
       <ButtonRow buttonStrings={buttonStrings} isButtonSelectedStates={isButtonSelectedStates} onButtonClick={handleButtonClick} />
-      {renderContent()}
+      <SyntaxHighlighter language={selectedLanguage} style={docco}>
+        {renderContent()}
+      </SyntaxHighlighter>
     </div>
   )
 };

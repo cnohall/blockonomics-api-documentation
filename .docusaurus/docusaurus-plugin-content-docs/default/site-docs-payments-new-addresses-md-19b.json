@@ -1,7 +1,7 @@
 {
   "id": "payments/new-addresses",
   "title": "New Address",
-  "description": "",
+  "description": "This will return a new address from your wallet to which the payer must send the payment. This call will increment index on server, so that each time you get a new address. To reset index you can use parameter reset=1. This will not increment index and will keep giving last generated address. It is useful for testing purposes.",
   "source": "@site/docs/payments/new-addresses.md",
   "sourceDirName": "payments",
   "slug": "/payments/new-addresses",
