@@ -48,6 +48,16 @@ curl -X DELETE -H 'Authorization: Bearer 2cDNOlCN985d7Rx3atSDOlmMeYaxzho2uPmHheI
 https://www.blockonomics.co/api/v2/stores/88
 ```
 
+### Attach / Detach Wallets
+
+```bash
+POST https://www.blockonomics.co/api/v2/stores/{id}/wallets
+Request body: { "wallet_id": <id of wallet to attach>}
+
+
+DELETE https://www.blockonomics.co/api/v2/stores/{id}/wallets/{id}
+```
+
 ### Example Response
 
 ```json
