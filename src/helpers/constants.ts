@@ -1,5 +1,5 @@
 import { newAddressNodeJS } from "../codeSnippets/newAddress/NodeJS";
-import { newAddressPHP } from "../codeSnippets/newAddress/php";
+import { newAddressPHP } from "../codeSnippets/newAddress/PHP";
 import { newAddressPython } from "../codeSnippets/newAddress/Python";
 
 export interface API_ENDPOINT {
