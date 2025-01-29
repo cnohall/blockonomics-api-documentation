@@ -1,7 +1,7 @@
 {
   "id": "payments/btc-price",
   "title": "BTC Price",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "You can use this endpoint to fetch the current bitcoin to fiat price. Our prices are same as that of BitPay. We support all major fiat currencies. Here is the list of currency codes supported.",
   "source": "@site/docs/payments/btc-price.md",
   "sourceDirName": "payments",
   "slug": "/payments/btc-price",
