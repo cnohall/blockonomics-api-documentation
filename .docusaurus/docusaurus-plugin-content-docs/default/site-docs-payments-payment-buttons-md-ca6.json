@@ -1,7 +1,7 @@
 {
   "id": "payments/payment-buttons",
   "title": "Payment Buttons",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "Below are various API endpoints to get information about orders generated using payment buttons. To use any of these, you need to first create payment buttons at Dashboard  >  Buttons & Links  > Products > Add a Product.",
   "source": "@site/docs/payments/payment-buttons.md",
   "sourceDirName": "payments",
   "slug": "/payments/payment-buttons",

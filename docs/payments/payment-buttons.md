@@ -4,31 +4,31 @@ sidebar_position: 6
 
 # Payment Buttons
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+Below are various API endpoints to get information about orders generated using payment buttons. To use any of these, you need to first create payment buttons at <a href="https://www.blockonomics.co/dashboard#" target="_blank">Dashboard </a> > <a href="https://www.blockonomics.co/dashboard#/link" target="_blank"> Buttons & Links </a> > <a href="https://www.blockonomics.co/dashboard#/link?products" target="_blank">Products</a> > Add a Product.
 
-## Create your first Post
+In the below requests, you have to set `apikey` as the Authorization header of the request.
 
-Create a file at `blog/2021-02-28-greetings.md`:
+### Get Order
+Returns details of a payment button order. `uuid` is the unique identifier of the order.
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+**GET** `/api/merchant_order/<uuid>`
 
-Congratulations, you have made your first post!
+### Get Order List
+Returns a list of all payment button orders in descending order of time. You can use `limit` to restrict the number of records (default is 500).
 
-Feel free to play around and edit this post as much as you like.
+**GET** `/api/merchant_orders?limit=<number>`
+
+### Order Hook
+Each new/updated order will be notified using the order hook URL. This URL can be configured in Blockonomic's Dashboard (<a href="https://www.blockonomics.co/dashboard#" target="_blank">Dashboard </a> -> <a href="https://www.blockonomics.co/dashboard#/link" target="_blank"> Buttons & Links </a> -> <a href="https://www.blockonomics.co/dashboard#/link?options" target="_blank">Options</a> > Order Hook URL).
+
+#### Example callback from server
+
+```bash
+<OrderHook_URL>?status=2&uuid=2b0c7e2cd523458098b2
 ```
 
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+### Status Values
+- `-1` : **PAYMENT_ERROR** (Happens when the paid BTC amount does not match the expected value)
+- `0` : **UNPAID**
+- `1` : **IN_PROCESS**
+- `2` : **PAID**
