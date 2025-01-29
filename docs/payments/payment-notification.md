@@ -4,31 +4,34 @@ sidebar_position: 4
 
 # Payment Notification
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+Use this to get real-time notifications of payments to your bitcoin address (suitable for client side/browser notification). 
 
-## Create your first Post
+### Parameters
+- `addr`: Your bitcoin address.
 
-Create a file at `blog/2021-02-28-greetings.md`:
+A websocket message is returned on successful payment containing the following fields:
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+- `status`: The status of the transaction.
+  - `0`: Unconfirmed
+  - `1`: Partially Confirmed
+  - `2`: Confirmed
+- `timestamp`: The Unix timestamp of the transaction.
+- `value`: The received payment amount in satoshis.
+- `txid`: The ID of the paying transaction.
 
-Congratulations, you have made your first post!
+### Definition
+Websocket connection to `wss://www.blockonomics.co/payment/<addr>`
 
-Feel free to play around and edit this post as much as you like.
+### Example Request
+```javascript
+var wsuri = "wss://www.blockonomics.co/payment/189CEMECgP36iXpCKQoBbRQn3dTCUPi5dm";
 ```
-
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+### Example Response
+```json
+{
+  "status": 0,
+  "timestamp": 1470371749,
+  "value": 167377096,
+  "txid": "aed36253434b90e45ded86ccf1729f5d2acd78bd7665c54e62d5000035a8f6d8"
+}
+```

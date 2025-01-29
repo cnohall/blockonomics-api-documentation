@@ -1,7 +1,7 @@
 {
   "id": "payments/payment-notification",
   "title": "Payment Notification",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "Use this to get real-time notifications of payments to your bitcoin address (suitable for client side/browser notification).",
   "source": "@site/docs/payments/payment-notification.md",
   "sourceDirName": "payments",
   "slug": "/payments/payment-notification",
