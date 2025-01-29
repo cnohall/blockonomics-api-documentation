@@ -1,7 +1,7 @@
 {
   "id": "payments/checkouts",
-  "title": "Checkouts",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "title": "Checkouts - Temp Products",
+  "description": "Checkouts provide a dynamic way to collect charges from customers and add custom data to your products. This is achieved by creating temporary products via API which can be shown via payment button/link/widget. Key Points about Temporary Products:",
   "source": "@site/docs/payments/checkouts.md",
   "sourceDirName": "payments",
   "slug": "/payments/checkouts",
