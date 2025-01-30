@@ -1,7 +1,7 @@
-import { newAddressNodeJS } from "../codeSnippets/newAddress/NodeJS";
-import { newAddressPHP } from "../codeSnippets/newAddress/PHP";
-import { newAddressPython } from "../codeSnippets/newAddress/Python";
-import { httpCallbackPHP } from "../codeSnippets/httpCallback/PHP";
+import { newAddressNodeJS } from "../codeSnippets/temp/newAddress/nodeJs";
+import { newAddressPHP } from "../codeSnippets/temp/newAddress/php";
+import { newAddressPython } from "../codeSnippets/temp/newAddress/python";
+import { httpCallbackPHP } from "../codeSnippets/temp/httpCallback/php";
 
 export interface API_ENDPOINT {
   name: string;
@@ -31,13 +31,16 @@ export const LOCAL_STORAGE_API_KEY = "apiKey";
 
 export const MULTIPLE_CODE_SNIPPETS_VARIANTS = {
   NEW_ADDRESS: "New Address",
-  HTTP_CALLBACK: "HTTP Callback"
+  HTTP_CALLBACK: "HTTP Callback",
+  USDT_PAYMENTS_CREATE_PAYMENT: "USDT Payments - Create Payment"
 }
 
 export const MULTIPLE_CODE_SNIPPETS_LANGUAGES = {
+  CURL: "curl",
   PHP: "PHP",
   PYTHON: "Python",
-  NODEJS: "NodeJS"
+  NODEJS: "NodeJS",
+  RUBY: "Ruby"
 }
 
 export const MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT = {
@@ -48,6 +51,13 @@ export const MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT = {
   ],
   [MULTIPLE_CODE_SNIPPETS_VARIANTS.HTTP_CALLBACK]: [
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP,
+  ],
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.USDT_PAYMENTS_CREATE_PAYMENT]: [
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.CURL,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY
   ]
 }
 
@@ -59,5 +69,7 @@ export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
   },
   [MULTIPLE_CODE_SNIPPETS_VARIANTS.HTTP_CALLBACK]: {
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: httpCallbackPHP,
-  }
+  },
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.USDT_PAYMENTS_CREATE_PAYMENT]: {
+
 };
