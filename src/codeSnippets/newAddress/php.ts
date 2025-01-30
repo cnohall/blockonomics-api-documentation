@@ -1,4 +1,4 @@
-export const newAddressPHP = `<?php
+export const newAddressPhp = `<?php
 $api_key = 'INSERT_API_KEY_HERE';
 $url = 'https://www.blockonomics.co/api/new_address';
 

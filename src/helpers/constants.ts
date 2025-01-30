@@ -1,7 +1,12 @@
-import { newAddressNodeJS } from "../codeSnippets/newAddress/nodeJs";
-import { newAddressPHP } from "../codeSnippets/newAddress/php";
+import { newAddressNodeJs } from "../codeSnippets/newAddress/nodeJs";
+import { newAddressPhp } from "../codeSnippets/newAddress/php";
 import { newAddressPython } from "../codeSnippets/newAddress/python";
 import { httpCallbackPHP } from "../codeSnippets/httpCallback/php";
+import { usdtPaymentsCreatePaymentCurl } from "../codeSnippets/usdtPaymentsCreatePayment/curl";
+import { usdtPaymentsCreatePaymentPhp } from "../codeSnippets/usdtPaymentsCreatePayment/php";
+import { usdtPaymentsCreatePaymentNodeJs } from "../codeSnippets/usdtPaymentsCreatePayment/nodeJs";
+import { usdtPaymentsCreatePaymentPython } from "../codeSnippets/usdtPaymentsCreatePayment/python";
+import { usdtPaymentsCreatePaymentRuby } from "../codeSnippets/usdtPaymentsCreatePayment/ruby";
 
 export interface API_ENDPOINT {
   name: string;
@@ -63,13 +68,18 @@ export const MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT = {
 
 export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
   [MULTIPLE_CODE_SNIPPETS_VARIANTS.NEW_ADDRESS]: {
-    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: newAddressPHP,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: newAddressPhp,
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON]: newAddressPython,
-    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS]: newAddressNodeJS,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS]: newAddressNodeJs,
   },
   [MULTIPLE_CODE_SNIPPETS_VARIANTS.HTTP_CALLBACK]: {
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: httpCallbackPHP,
   },
   [MULTIPLE_CODE_SNIPPETS_VARIANTS.USDT_PAYMENTS_CREATE_PAYMENT]: {
-
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.CURL]: usdtPaymentsCreatePaymentCurl,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: usdtPaymentsCreatePaymentPhp,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON]: usdtPaymentsCreatePaymentPython,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS]: usdtPaymentsCreatePaymentNodeJs,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY]: usdtPaymentsCreatePaymentRuby
+  }
 };
