@@ -34,3 +34,18 @@ To fetch the USDT payment address for your store, use the `new_address` endpoint
 To display the wallet connection and handle USDT payments, use the Web3 Payment Element. Customize the attributes as needed to integrate with your checkout flow.
 
 <MultipleCodeSnippets variant="USDT Payments - Display Payment" />
+
+#### Attributes
+- `order_amount`: The amount of USDT to pay
+- `receive_address`: Your USDT receiving address
+- `redirect_url`: URL to redirect upon payment
+- `testnet`: The network to use (`0` = mainnet, `1` = sepolia testnet)
+
+Once the payment is completed, the user will be redirected to the `redirect_url` containing the transaction hash (txhash).
+
+```html
+/payment.php?order_id=ORDER_ID&txhash=0x712f876339d877e7558f25b4c0b684c5e1d1a11472d407a175c231894b280714
+```
+
+#### Retrieving Transaction Hash
+Extract the transaction hash from the txhash URL parameter and store it in your database for tracking.
