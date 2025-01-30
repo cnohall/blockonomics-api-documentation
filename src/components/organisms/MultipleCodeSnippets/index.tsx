@@ -34,10 +34,8 @@ const MultipleCodeSnippets = ({ variant }) => {
 
   const renderContent = () => {
     const contentStrings = MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT[variant];
-    const languageValues = Object.values(MULTIPLE_CODE_SNIPPETS_LANGUAGES);
-    const index = isButtonSelectedStates.findIndex((isSelected) => isSelected);
-    const selectedLanguage = languageValues[index];
-    return contentStrings[selectedLanguage];
+    const selectedButtonLanguage = buttonStrings[isButtonSelectedStates.findIndex((isSelected) => isSelected)];
+    return contentStrings[selectedButtonLanguage];
   };
 
   const selectedLanguage = MULTIPLE_CODE_SNIPPETS_LANGUAGES[Object.keys(MULTIPLE_CODE_SNIPPETS_LANGUAGES)[isButtonSelectedStates.findIndex((isSelected) => isSelected)]];
