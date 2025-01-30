@@ -1,34 +1,18 @@
 ---
 sidebar_position: 8
 ---
+import MultipleCodeSnippets from "@site/src/components/organisms/MultipleCodeSnippets";
 
 # USDT Payments
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+The Blockonomics API allows merchants to accept USDT payments directly into their USDT wallet. It enables payment creation, payment display, transaction monitoring, and confirmation tracking. Setup your USDT Wallet and Store in the Blockonomics Dashboard.
 
-## Create your first Post
+<center>![USDT Payments](../assets/usdt-payments.svg)</center>
 
-Create a file at `blog/2021-02-28-greetings.md`:
+### 1. Create Payment
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+To fetch the USDT payment address for your store, use the `new_address` endpoint.
 
-Congratulations, you have made your first post!
+#### Example Request
 
-Feel free to play around and edit this post as much as you like.
-```
-
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+<MultipleCodeSnippets variant="USDT Payments - Create Payment" />

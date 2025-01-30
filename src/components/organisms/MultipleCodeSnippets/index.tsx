@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import ButtonRow from "../../molecules/ButtonRow";
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_LANGUAGES } from "@site/src/helpers/constants";
+import { MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_LANGUAGES, MULTIPLE_CODE_SNIPPETS_VARIANTS } from "@site/src/helpers/constants";
 
 const MultipleCodeSnippets = ({ variant }) => {
+
+  const variantExists = Object.values(MULTIPLE_CODE_SNIPPETS_VARIANTS).includes(variant);
+
+  if (!variantExists) {
+    console.error(`Invalid variant: ${variant}`);
+    return null;
+  }
   
   if (!variant) {
     console.error(`No variant provided`);

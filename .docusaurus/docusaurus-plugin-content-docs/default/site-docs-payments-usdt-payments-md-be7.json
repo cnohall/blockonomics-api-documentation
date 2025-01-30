@@ -1,7 +1,7 @@
 {
   "id": "payments/usdt-payments",
   "title": "USDT Payments",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "The Blockonomics API allows merchants to accept USDT payments directly into their USDT wallet. It enables payment creation, payment display, transaction monitoring, and confirmation tracking. Setup your USDT Wallet and Store in the Blockonomics Dashboard.",
   "source": "@site/docs/payments/usdt-payments.md",
   "sourceDirName": "payments",
   "slug": "/payments/usdt-payments",
