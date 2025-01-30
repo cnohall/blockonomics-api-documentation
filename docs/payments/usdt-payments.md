@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 ---
+
 import MultipleCodeSnippets from "@site/src/components/organisms/MultipleCodeSnippets";
 
 # USDT Payments
@@ -18,14 +19,15 @@ To fetch the USDT payment address for your store, use the `new_address` endpoint
 <MultipleCodeSnippets variant="USDT Payments - Create Payment" />
 
 #### Parameters
+
 - `crypto`: The cryptocurrency to use (USDT)
 - `match_callback`: String to match part of your callback URL.
 
 #### Example Response
 
 ```json
-{ 
-  "address" : "0x0c1EA7FDCA81357658904d9fa6Da730c3ba19B26" 
+{
+  "address": "0x0c1EA7FDCA81357658904d9fa6Da730c3ba19B26"
 }
 ```
 
@@ -36,6 +38,7 @@ To display the wallet connection and handle USDT payments, use the Web3 Payment 
 <MultipleCodeSnippets variant="USDT Payments - Display Payment" />
 
 #### Attributes
+
 - `order_amount`: The amount of USDT to pay
 - `receive_address`: Your USDT receiving address
 - `redirect_url`: URL to redirect upon payment
@@ -48,4 +51,7 @@ Once the payment is completed, the user will be redirected to the `redirect_url`
 ```
 
 #### Retrieving Transaction Hash
+
 Extract the transaction hash from the txhash URL parameter and store it in your database for tracking.
+
+<MultipleCodeSnippets variant="USDT Payments - Transaction Hash" />
