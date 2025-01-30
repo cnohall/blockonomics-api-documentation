@@ -1,7 +1,7 @@
 {
   "id": "payments/sending-bitcoin",
   "title": "Sending Bitcoin",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "We provide a self hosting free to use wallet service that you can deploy and use for sending bitcoin. Here are the details:",
   "source": "@site/docs/payments/sending-bitcoin.md",
   "sourceDirName": "payments",
   "slug": "/payments/sending-bitcoin",

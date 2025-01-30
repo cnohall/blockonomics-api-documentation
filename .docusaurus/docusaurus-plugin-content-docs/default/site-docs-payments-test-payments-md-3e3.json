@@ -1,7 +1,7 @@
 {
   "id": "payments/test-payments",
   "title": "Test Payments",
-  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "description": "You can test payment integration without spending any bitcoins! By using the Test Bench, you can simulate test payments to your bitcoin address. These test payment notifications are send from our server (following API format), but not actually sent to the bitcoin network.",
   "source": "@site/docs/payments/test-payments.md",
   "sourceDirName": "payments",
   "slug": "/payments/test-payments",
