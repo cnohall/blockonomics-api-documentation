@@ -1,7 +1,7 @@
-import { newAddressNodeJS } from "../codeSnippets/temp/newAddress/nodeJs";
-import { newAddressPHP } from "../codeSnippets/temp/newAddress/php";
-import { newAddressPython } from "../codeSnippets/temp/newAddress/python";
-import { httpCallbackPHP } from "../codeSnippets/temp/httpCallback/php";
+import { newAddressNodeJS } from "../codeSnippets/newAddress/nodeJs";
+import { newAddressPHP } from "../codeSnippets/newAddress/php";
+import { newAddressPython } from "../codeSnippets/newAddress/python";
+import { httpCallbackPHP } from "../codeSnippets/httpCallback/php";
 
 export interface API_ENDPOINT {
   name: string;
