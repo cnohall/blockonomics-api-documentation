@@ -62,7 +62,7 @@ After receiving the transaction hash, use the `monitor_tx` endpoint to begin tra
 
 <MultipleCodeSnippets variant="USDT Payments - Monitor Transaction" />
 
-### Parameters
+#### Parameters
 
 - `txhash`: The received transaction hash
 - `crypto`: The cryptocurrency used (USDT)
