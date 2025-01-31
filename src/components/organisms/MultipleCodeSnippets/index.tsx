@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import ButtonRow from "../../molecules/ButtonRow";
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_LANGUAGES, MULTIPLE_CODE_SNIPPETS_VARIANTS } from "@site/src/helpers/constants";
+import { dracula, docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { DOCUSAURUS_COLOR_MODES, MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_LANGUAGES, MULTIPLE_CODE_SNIPPETS_VARIANTS } from "@site/src/helpers/constants";
+import { useColorMode } from '@docusaurus/theme-common';
+
 
 const MultipleCodeSnippets = ({ variant }) => {
 
+  const { colorMode } = useColorMode();
+  const isDarkMode = colorMode === DOCUSAURUS_COLOR_MODES.DARK;
   const variantExists = Object.values(MULTIPLE_CODE_SNIPPETS_VARIANTS).includes(variant);
 
   if (!variantExists) {
@@ -42,7 +46,7 @@ const MultipleCodeSnippets = ({ variant }) => {
   return (
     <div>
       <ButtonRow buttonStrings={buttonStrings} isButtonSelectedStates={isButtonSelectedStates} onButtonClick={handleButtonClick} />
-      <SyntaxHighlighter language={selectedLanguage} style={docco}>
+      <SyntaxHighlighter language={selectedLanguage} style={isDarkMode ?  dracula : docco}>
         {renderContent()}
       </SyntaxHighlighter>
     </div>

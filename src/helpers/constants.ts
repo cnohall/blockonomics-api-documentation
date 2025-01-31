@@ -161,3 +161,8 @@ export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
       usdtPaymentsRecieveCallbackRubySinatra,
   },
 };
+
+export const DOCUSAURUS_COLOR_MODES = {
+  DARK: 'dark',
+  LIGHT: 'light'
+}
