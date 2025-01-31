@@ -68,3 +68,27 @@ After receiving the transaction hash, use the `monitor_tx` endpoint to begin tra
 - `crypto`: The cryptocurrency used (USDT)
 - `match_callback`: String to match part of your callback URL.
 - `testnet`: Indicates if the transaction is on the testnet (`0` = mainnet, `1` = sepolia testnet)
+
+### 4. Callback Notification
+
+Once the payment is confirmed, a callback request is sent to your specified callback URL with the transaction details.
+
+#### Parameters
+
+- `txid`: The transaction ID/Hash
+- `addr`: Your USDT receive address
+- `value`: The USDT amount in smallest units (6 decimals). For example, `value=1000000` corresponds to 1 USDT
+- `status`: The transaction status (`0` = unconfirmed, `1` = partially confirmed, `2` = confirmed)
+- `secret`: Security secret
+- `crypto`: The cryptocurrency used (USDT)
+- `testnet`: Indicates if the transaction is on the testnet (`0` = mainnet, `1` = sepolia testnet)
+
+#### Example
+
+```html
+YOUR_CALLBACK_URL?txid=0x712f876339d877e7558f25b4c0b684c5e1d1a11472d407a175c231894b280714&addr=0x0c1EA7FDCA81357658904d9fa6Da730c3ba19B26&value=1000000&status=2&crypto=USDT&testnet=1
+```
+
+#### Recieve Callback
+
+<MultipleCodeSnippets variant="USDT Payments - Recieve Callback" />

@@ -18,6 +18,10 @@ import { usdtPaymentsMonitorTransactionPhp } from "../codeSnippets/usdtPaymentsM
 import { usdtPaymentsMonitorTransactionPython } from "../codeSnippets/usdtPaymentsMonitorTransaction/python";
 import { usdtPaymentsMonitorTransactionNodeJs } from "../codeSnippets/usdtPaymentsMonitorTransaction/nodeJs";
 import { usdtPaymentsMonitorTransactionRuby } from "../codeSnippets/usdtPaymentsMonitorTransaction/ruby";
+import { usdtPaymentsRecieveCallbackPhp } from "../codeSnippets/usdtPaymentsRecieveCallback/php";
+import { usdtPaymentsRecieveCallbackPythonFlask } from "../codeSnippets/usdtPaymentsRecieveCallback/pythonFlask";
+import { usdtPaymentsRecieveCallbackNodeJsExpress } from "../codeSnippets/usdtPaymentsRecieveCallback/nodeJsExpress";
+import { usdtPaymentsRecieveCallbackRubySinatra } from "../codeSnippets/usdtPaymentsRecieveCallback/rubySinatra";
 
 export interface API_ENDPOINT {
   name: string;
@@ -52,6 +56,7 @@ export const MULTIPLE_CODE_SNIPPETS_VARIANTS = {
   USDT_PAYMENTS_DISPLAY_PAYMENT: "USDT Payments - Display Payment",
   USDT_PAYMENTS_TRANSACTION_HASH: "USDT Payments - Transaction Hash",
   USDT_PAYMENTS_MONITOR_TRANSACTION: "USDT Payments - Monitor Transaction",
+  USDT_PAYMENTS_RECIEVE_CALLBACK: "USDT Payments - Recieve Callback",
 };
 
 export const MULTIPLE_CODE_SNIPPETS_LANGUAGES = {
@@ -100,6 +105,12 @@ export const MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT = {
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS,
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY,
   ],
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.USDT_PAYMENTS_RECIEVE_CALLBACK]: [
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON_FLASK,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS_EXPRESS,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY_SINATRA,
+  ],
 };
 
 export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
@@ -139,5 +150,14 @@ export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS]:
       usdtPaymentsMonitorTransactionNodeJs,
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY]: usdtPaymentsMonitorTransactionRuby,
+  },
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.USDT_PAYMENTS_RECIEVE_CALLBACK]: {
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: usdtPaymentsRecieveCallbackPhp,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON_FLASK]:
+      usdtPaymentsRecieveCallbackPythonFlask,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS_EXPRESS]:
+      usdtPaymentsRecieveCallbackNodeJsExpress,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY_SINATRA]:
+      usdtPaymentsRecieveCallbackRubySinatra,
   },
 };
