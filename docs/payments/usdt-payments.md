@@ -55,3 +55,16 @@ Once the payment is completed, the user will be redirected to the `redirect_url`
 Extract the transaction hash from the txhash URL parameter and store it in your database for tracking.
 
 <MultipleCodeSnippets variant="USDT Payments - Transaction Hash" />
+
+### 3. Monitor Transaction
+
+After receiving the transaction hash, use the `monitor_tx` endpoint to begin tracking the transaction.
+
+<MultipleCodeSnippets variant="USDT Payments - Monitor Transaction" />
+
+### Parameters
+
+- `txhash`: The received transaction hash
+- `crypto`: The cryptocurrency used (USDT)
+- `match_callback`: String to match part of your callback URL.
+- `testnet`: Indicates if the transaction is on the testnet (`0` = mainnet, `1` = sepolia testnet)

@@ -13,6 +13,11 @@ import { usdtPaymentsTransactionHashPhp } from "../codeSnippets/usdtPaymentsTran
 import { usdtPaymentsTransactionHashPythonFlask } from "../codeSnippets/usdtPaymentsTransactionHash/pythonFlask";
 import { usdtPaymentsTransactionHashNodeJsExpress } from "../codeSnippets/usdtPaymentsTransactionHash/nodeJsExpress";
 import { usdtPaymentsTransactionHashRubySinatra } from "../codeSnippets/usdtPaymentsTransactionHash/rubySinatra";
+import { usdtPaymentsMonitorTransactionCurl } from "../codeSnippets/usdtPaymentsMonitorTransaction/curl";
+import { usdtPaymentsMonitorTransactionPhp } from "../codeSnippets/usdtPaymentsMonitorTransaction/php";
+import { usdtPaymentsMonitorTransactionPython } from "../codeSnippets/usdtPaymentsMonitorTransaction/python";
+import { usdtPaymentsMonitorTransactionNodeJs } from "../codeSnippets/usdtPaymentsMonitorTransaction/nodeJs";
+import { usdtPaymentsMonitorTransactionRuby } from "../codeSnippets/usdtPaymentsMonitorTransaction/ruby";
 
 export interface API_ENDPOINT {
   name: string;
@@ -46,6 +51,7 @@ export const MULTIPLE_CODE_SNIPPETS_VARIANTS = {
   USDT_PAYMENTS_CREATE_PAYMENT: "USDT Payments - Create Payment",
   USDT_PAYMENTS_DISPLAY_PAYMENT: "USDT Payments - Display Payment",
   USDT_PAYMENTS_TRANSACTION_HASH: "USDT Payments - Transaction Hash",
+  USDT_PAYMENTS_MONITOR_TRANSACTION: "USDT Payments - Monitor Transaction",
 };
 
 export const MULTIPLE_CODE_SNIPPETS_LANGUAGES = {
@@ -87,6 +93,13 @@ export const MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT = {
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS_EXPRESS,
     MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY_SINATRA,
   ],
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.USDT_PAYMENTS_MONITOR_TRANSACTION]: [
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.CURL,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS,
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY,
+  ],
 };
 
 export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
@@ -117,5 +130,14 @@ export const MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT = {
       usdtPaymentsTransactionHashNodeJsExpress,
     [MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY_SINATRA]:
       usdtPaymentsTransactionHashRubySinatra,
+  },
+  [MULTIPLE_CODE_SNIPPETS_VARIANTS.USDT_PAYMENTS_MONITOR_TRANSACTION]: {
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.CURL]: usdtPaymentsMonitorTransactionCurl,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PHP]: usdtPaymentsMonitorTransactionPhp,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.PYTHON]:
+      usdtPaymentsMonitorTransactionPython,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.NODEJS]:
+      usdtPaymentsMonitorTransactionNodeJs,
+    [MULTIPLE_CODE_SNIPPETS_LANGUAGES.RUBY]: usdtPaymentsMonitorTransactionRuby,
   },
 };
