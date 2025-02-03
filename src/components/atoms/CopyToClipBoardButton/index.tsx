@@ -16,6 +16,8 @@ const CopyToClipboardButton = ({ content, hasMouseEnteredCodeBlock }) => {
     setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
   };
 
+  const backgroundColor = isDarkMode ? "#282A36" : "#F8F8F8";
+
   return (
     <CopyToClipboard text={content}>
       <div>
@@ -25,6 +27,7 @@ const CopyToClipboardButton = ({ content, hasMouseEnteredCodeBlock }) => {
             style={{
               opacity: hasMouseEnteredCodeBlock ? 1 : 0,
               color: "green",
+              backgroundColor,
             }}
             onClick={handleCopy}
           />
@@ -34,6 +37,7 @@ const CopyToClipboardButton = ({ content, hasMouseEnteredCodeBlock }) => {
             style={{
               opacity: hasMouseEnteredCodeBlock ? 0.5 : 0,
               color: isDarkMode ? "white" : "black",
+              backgroundColor,
             }}
             onClick={handleCopy}
           />
