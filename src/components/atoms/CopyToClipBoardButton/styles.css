@@ -5,7 +5,7 @@
   cursor: pointer;
   color: #000; /* Ensure the color contrasts with the background */
   opacity: 0.7;
-  transition: color 0.2s, transform 0.3s, opacity 0.2s;
+  transition: color 0.3s, opacity 0.3s;
   padding: 6px;
   border-radius: 5px;
   border: 1px solid #ccc;
