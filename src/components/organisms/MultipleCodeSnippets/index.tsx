@@ -1,28 +1,38 @@
 import React, { useState } from "react";
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import SyntaxHighlighter from "react-syntax-highlighter";
 import ButtonRow from "../../molecules/ButtonRow";
-import { dracula, docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { DOCUSAURUS_COLOR_MODES, MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT, MULTIPLE_CODE_SNIPPETS_LANGUAGES, MULTIPLE_CODE_SNIPPETS_VARIANTS } from "@site/src/helpers/constants";
-import { useColorMode } from '@docusaurus/theme-common';
-
+import { dracula, github } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import {
+  DOCUSAURUS_COLOR_MODES,
+  MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT,
+  MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT,
+  MULTIPLE_CODE_SNIPPETS_LANGUAGES,
+  MULTIPLE_CODE_SNIPPETS_VARIANTS,
+} from "@site/src/helpers/constants";
+import { useColorMode } from "@docusaurus/theme-common";
+import "./styles.css";
+import { FiClipboard } from "react-icons/fi";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 const MultipleCodeSnippets = ({ variant }) => {
-
   const { colorMode } = useColorMode();
   const isDarkMode = colorMode === DOCUSAURUS_COLOR_MODES.DARK;
-  const variantExists = Object.values(MULTIPLE_CODE_SNIPPETS_VARIANTS).includes(variant);
+  const variantExists = Object.values(MULTIPLE_CODE_SNIPPETS_VARIANTS).includes(
+    variant
+  );
 
   if (!variantExists) {
     console.error(`Invalid variant: ${variant}`);
     return null;
   }
-  
+
   if (!variant) {
     console.error(`No variant provided`);
     return null;
   }
 
-  const buttonStrings = MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT[variant];
+  const buttonStrings =
+    MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT[variant];
 
   const [isButtonSelectedStates, setIsButtonSelectedStates] = useState(() => {
     const initialSelectedState = new Array(buttonStrings.length).fill(false);
@@ -37,20 +47,48 @@ const MultipleCodeSnippets = ({ variant }) => {
   };
 
   const renderContent = () => {
-    const contentStrings = MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT[variant];
-    const selectedButtonLanguage = buttonStrings[isButtonSelectedStates.findIndex((isSelected) => isSelected)];
+    const contentStrings =
+      MULTIPLE_CODE_SNIPPETS_CONTENT_STRINGS_BY_VARIANT[variant];
+    const selectedButtonLanguage =
+      buttonStrings[
+        isButtonSelectedStates.findIndex((isSelected) => isSelected)
+      ];
     return contentStrings[selectedButtonLanguage];
   };
 
-  const selectedLanguage = MULTIPLE_CODE_SNIPPETS_LANGUAGES[Object.keys(MULTIPLE_CODE_SNIPPETS_LANGUAGES)[isButtonSelectedStates.findIndex((isSelected) => isSelected)]];
+  const selectedLanguage =
+    MULTIPLE_CODE_SNIPPETS_LANGUAGES[
+      Object.keys(MULTIPLE_CODE_SNIPPETS_LANGUAGES)[
+        isButtonSelectedStates.findIndex((isSelected) => isSelected)
+      ]
+    ];
+
+  const handleCopy = () => {
+    const content = renderContent();
+    navigator.clipboard.writeText(content);
+  };
+
+  const content = renderContent();
   return (
-    <div>
-      <ButtonRow buttonStrings={buttonStrings} isButtonSelectedStates={isButtonSelectedStates} onButtonClick={handleButtonClick} />
-      <SyntaxHighlighter language={selectedLanguage} style={isDarkMode ?  dracula : docco}>
-        {renderContent()}
-      </SyntaxHighlighter>
+    <div className="syntax-highlighter-container">
+      <ButtonRow
+        buttonStrings={buttonStrings}
+        isButtonSelectedStates={isButtonSelectedStates}
+        onButtonClick={handleButtonClick}
+      />
+      <div className="code-container">
+        <SyntaxHighlighter
+          language={selectedLanguage}
+          style={isDarkMode ? dracula : github}
+        >
+          {content}
+        </SyntaxHighlighter>
+        <CopyToClipboard text={content}>
+          <FiClipboard className="copy-icon" onClick={handleCopy} />
+        </CopyToClipboard>
+      </div>
     </div>
-  )
+  );
 };
 
 export default MultipleCodeSnippets;
