@@ -1,33 +1,35 @@
+import { useColorMode } from "@docusaurus/theme-common";
+import { DOCUSAURUS_COLOR_MODES } from "@site/src/helpers/constants";
 import React from "react";
+import { darkButtonStyle, lightButtonStyle } from "./styles";
 
 const Button = ({ children, isSelected, onClick }) => {
-  const buttonStyle = isSelected
-    ? {
-        paddingTop: "0.5rem",
-        paddingBottom: "0.5rem",
-        paddingLeft: "1rem",
-        paddingRight: "1rem",
-        borderRadius: "35px",
-        fontSize: "1rem",
-        fontWeight: "700",
-        backgroundColor: "#40C381",
-        color: "#ffffff",
-        cursor: "pointer",
-      }
-    : {
-        paddingTop: "0.5rem",
-        paddingBottom: "0.5rem",
-        paddingLeft: "1rem",
-        paddingRight: "1rem",
-        borderRadius: "35px",
-        fontSize: "1rem",
-        fontWeight: "500",
-        backgroundColor: "#D7EAE0",
-        color: "#818C86",
-        cursor: "pointer",
-      };
+  const [isHovered, setIsHovered] = React.useState<boolean>(false);
+  const { colorMode } = useColorMode();
+  const isDarkMode = colorMode === DOCUSAURUS_COLOR_MODES.DARK;
 
-  return <button style={buttonStyle} onClick={onClick}>{children}</button>;
+  const buttonStyle = isDarkMode
+    ? darkButtonStyle(isSelected)
+    : lightButtonStyle(isSelected);
+
+  // Hover effects
+  const buttonHoverStyle = {
+    transform: "scale(1.05)",
+  };
+
+  return (
+    <button
+      style={{
+        ...buttonStyle,
+        ...(isHovered && buttonHoverStyle),
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default Button;
