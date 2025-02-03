@@ -1,5 +1,6 @@
 import React from "react";
-import { FiClipboard, FiCheck } from "react-icons/fi";
+import { FiCheck } from "react-icons/fi";
+import { MdOutlineContentCopy } from "react-icons/md";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./styles.css";
 import { useColorMode } from "@docusaurus/theme-common";
@@ -32,7 +33,7 @@ const CopyToClipboardButton = ({ content, hasMouseEnteredCodeBlock }) => {
             onClick={handleCopy}
           />
         ) : (
-          <FiClipboard
+          <MdOutlineContentCopy
             className="copy-icon"
             style={{
               opacity: hasMouseEnteredCodeBlock ? 0.5 : 0,
