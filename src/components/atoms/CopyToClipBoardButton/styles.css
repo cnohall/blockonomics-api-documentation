@@ -1,0 +1,19 @@
+.copy-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #000; /* Ensure the color contrasts with the background */
+  opacity: 0.7;
+  transition: color 0.2s, transform 0.3s, opacity 0.2s;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 32px;
+  width: 32px;
+}
+
+.copy-icon:hover {
+  color: #000;
+  opacity: 1 !important;
+}

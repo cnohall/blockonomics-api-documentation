@@ -10,11 +10,15 @@ import {
   MULTIPLE_CODE_SNIPPETS_VARIANTS,
 } from "@site/src/helpers/constants";
 import { useColorMode } from "@docusaurus/theme-common";
+import CopyToClipboardButton from "../../atoms/CopyToClipBoardButton";
 import "./styles.css";
-import { FiClipboard } from "react-icons/fi";
-import CopyToClipboard from "react-copy-to-clipboard";
 
 const MultipleCodeSnippets = ({ variant }) => {
+  if (!variant) {
+    console.error(`No variant provided`);
+    return null;
+  }
+
   const { colorMode } = useColorMode();
   const isDarkMode = colorMode === DOCUSAURUS_COLOR_MODES.DARK;
   const variantExists = Object.values(MULTIPLE_CODE_SNIPPETS_VARIANTS).includes(
@@ -26,11 +30,6 @@ const MultipleCodeSnippets = ({ variant }) => {
     return null;
   }
 
-  if (!variant) {
-    console.error(`No variant provided`);
-    return null;
-  }
-
   const buttonStrings =
     MULTIPLE_CODE_SNIPPETS_BUTTON_STRINGS_BY_VARIANT[variant];
 
@@ -39,6 +38,8 @@ const MultipleCodeSnippets = ({ variant }) => {
     initialSelectedState[0] = true; // Set the first button to be selected by default
     return initialSelectedState;
   });
+  const [hasMouseEnteredCodeBlock, setHasMouseEnteredCodeBlock] =
+    useState<boolean>(false);
 
   const handleButtonClick = (index) => {
     const newSelectedStates = new Array(buttonStrings.length).fill(false);
@@ -63,11 +64,6 @@ const MultipleCodeSnippets = ({ variant }) => {
       ]
     ];
 
-  const handleCopy = () => {
-    const content = renderContent();
-    navigator.clipboard.writeText(content);
-  };
-
   const content = renderContent();
   return (
     <div className="syntax-highlighter-container">
@@ -76,16 +72,21 @@ const MultipleCodeSnippets = ({ variant }) => {
         isButtonSelectedStates={isButtonSelectedStates}
         onButtonClick={handleButtonClick}
       />
-      <div className="code-container">
+      <div
+        className="code-container"
+        onMouseEnter={() => setHasMouseEnteredCodeBlock(true)}
+        onMouseLeave={() => setHasMouseEnteredCodeBlock(false)}
+      >
         <SyntaxHighlighter
           language={selectedLanguage}
           style={isDarkMode ? dracula : github}
         >
           {content}
         </SyntaxHighlighter>
-        <CopyToClipboard text={content}>
-          <FiClipboard className="copy-icon" onClick={handleCopy} />
-        </CopyToClipboard>
+        <CopyToClipboardButton
+          content={content}
+          hasMouseEnteredCodeBlock={hasMouseEnteredCodeBlock}
+        />
       </div>
     </div>
   );
