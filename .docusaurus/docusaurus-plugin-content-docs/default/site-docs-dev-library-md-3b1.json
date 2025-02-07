@@ -1,7 +1,7 @@
 {
   "id": "dev-library",
   "title": "Dev Library",
-  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "description": "",
   "source": "@site/docs/dev-library.md",
   "sourceDirName": ".",
   "slug": "/dev-library",
