@@ -15,13 +15,13 @@ function SwaggerTest() {
     <div>
       <h2>Auto Generated Code Snippets</h2>
       <p>
-        Sample json file for the below can be seen at:
+        Sample json file for the below can be seen at:{" "}
         <a href="https://apiembed.com/sample.json" target="_blank">
           https://apiembed.com/sample.json
         </a>
         <br />
-        <b>Please note:</b> {""}
-        This we can have a code snippet generated for each API endpoint we want
+        <b>Please note:</b> This we can have a code snippet generated for each
+        API endpoint we want
       </p>
       <iframe
         src="//api.apiembed.com/?source=https://apiembed.com/sample.json&targets=shell:curl,node:unirest,java:unirest,python:requests,php:curl,ruby:native,objc:nsurlsession,go:native"
@@ -39,9 +39,8 @@ function SwaggerTest() {
           https://petstore.swagger.io/v2/swagger.json
         </a>
         <br />
-        <b>Please note:</b> {""}
-        This we can have an individual playground and json file for each API
-        endpoint
+        <b>Please note:</b> This we can have an individual playground and json
+        file for each API endpoint
       </p>
       {SwaggerUI ? (
         <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json" />
