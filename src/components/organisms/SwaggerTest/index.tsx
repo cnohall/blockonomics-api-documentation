@@ -1,8 +1,24 @@
-import SwaggerUI from "swagger-ui-react";
-import "swagger-ui-react/swagger-ui.css";
+import React, { useEffect, useState } from "react";
 
-const SwaggerTest = () => (
-  <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json" />
-);
+function SwaggerTest() {
+  const [SwaggerUI, setSwaggerUI] = useState(null);
+
+  useEffect(() => {
+    // Dynamically import the SwaggerUI component only in the client side
+    import("swagger-ui-react").then((module) => {
+      setSwaggerUI(() => module.default);
+    });
+  }, []);
+
+  return (
+    <div>
+      {SwaggerUI ? (
+        <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json" />
+      ) : (
+        <p>Loading API documentation...</p>
+      )}
+    </div>
+  );
+}
 
 export default SwaggerTest;
