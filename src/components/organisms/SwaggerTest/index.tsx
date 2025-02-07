@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "swagger-ui-react/swagger-ui.css";
 
 function SwaggerTest() {
   const [SwaggerUI, setSwaggerUI] = useState(null);
