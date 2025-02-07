@@ -43,7 +43,11 @@ function SwaggerTest() {
         file for each API endpoint
       </p>
       {SwaggerUI ? (
-        <SwaggerUI url="https://petstore.swagger.io/v2/swagger.json" />
+        <SwaggerUI
+          url="https://petstore.swagger.io/v2/swagger.json"
+          requestSnippetsEnabled={true}
+          defaultModelsExpandDepth={-1}
+        />
       ) : (
         <p>Loading API documentation...</p>
       )}
